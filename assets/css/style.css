@@ -48,6 +48,11 @@
   font-family: montserrat-light;
   src: url("../fonts/Montserrat-Light.ttf");
 }
+@font-face{
+  font-family: montserrat-italic;
+  src: url("../fonts/Montserrat-Italic.ttf");
+}
+
 
 
 body {
