@@ -65,8 +65,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "montserrat-regular";
-  font-weight:600;
+  font-family: "montserrat-medium";
+  font-weight:100;
 }
 
 /*--------------------------------------------------------------
@@ -88,13 +88,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #235C95;
+  background: #b38e5d;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #00A6D6;
+  background: #691c32;
   color: #fff;
 }
 
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "century-gothic-bold";
+  font-family: "montserrat-semibold";
 }
 
 #header .logo a {
@@ -1040,7 +1040,7 @@ section {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
-  font-family: "century-gothic-bold";
+  font-family: "montserrat-semibold";
 }
 
 .course-details .course-info p {
@@ -1214,7 +1214,7 @@ section {
   font-size: 36px;
   color: #235C95;
   font-weight: 600;
-  font-family: "century-gothic-bold";
+  font-family: "montserrat-semibold";
   margin-bottom: 20px;
 }
 
@@ -1270,7 +1270,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "century-gothic";
+  font-family: "montserrat-regular";
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1459,14 +1459,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #37423b;
+  color: white;
   font-size: 14px;
   background: #eef0ef;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f9faf9;
+  background: #13322B;
 }
 
 #footer .footer-top .footer-contact {
@@ -1485,14 +1485,14 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "century-gothic";
-  color: #777777;
+  font-family: "montserrat-regular";
+  color: white;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: white;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1509,9 +1509,10 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #235C95;
+  color: #b38e5d;
   font-size: 18px;
   line-height: 1;
+  font-weight: 900;
 }
 
 #footer .footer-top .footer-links ul li {
@@ -1525,7 +1526,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: white;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1601,7 +1602,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #235C95;
+  background: #b38e5d;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1614,8 +1615,8 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #00A6D6;
-  color: #fff;
+  background: #fff;
+  color: #b38e5d;
   text-decoration: none;
 }
 
@@ -1623,9 +1624,9 @@ section {
 /* Custom */
 .listaCustom li{
   margin-top: 5px;
-  font-size: 14px;
-  font-family: "century-gothic";
-  font-weight: 600;
+  font-size: 13px;
+  font-family: "montserrat-medium";
+  /*font-weight: 600;*/
   text-align: justify;
 }
 
@@ -1642,7 +1643,8 @@ section {
   }
 
 .listaCustom li b{
-  font-family: century-gothic-bold;
+  font-family: "montserrat-medium";
+  font-weight: 100;
 }
 
 .events .card-body{
@@ -1681,7 +1683,7 @@ section {
     width: 250px;
     height: 325px;
     margin-bottom: 20px;
-    font-family: "century-gothic";
+    font-family: "montserrat-medium";
     margin-left: 13%;
   }
 
@@ -1932,7 +1934,7 @@ section {
     width: 120px !important;
   }
   html{
-    font-family: century-gothic;
+    font-family: "montserrat-medium";
   }
 
   .font-italic{ 
@@ -1974,12 +1976,12 @@ section {
     text-align: justify; 
     line-height : 25px;
     font-weight: 600;
-    font-family: century-gothic;
+    font-family: "montserrat-medium";
     /*margin-bottom: 30px;*/
   }
 
   .encabezadoDescripcion b{
-    font-family: century-gothic-bold;
+    font-family: "montserrat-semibold"
     color: #9d2348;
   }
   .testimonial-item p{
@@ -2063,4 +2065,6 @@ section {
   cursor: pointer;
 }
 
-
+.footerClass{
+  background-image:  url("../img/footerimg.png");;
+}
