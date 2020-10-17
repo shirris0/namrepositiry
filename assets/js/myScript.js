@@ -1,4 +1,4 @@
-var host = "/namrepository/";
+var host = "/";
 
 $( document ).ready(function() {
 
