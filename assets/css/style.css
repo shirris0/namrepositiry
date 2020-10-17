@@ -52,6 +52,14 @@
   font-family: montserrat-italic;
   src: url("../fonts/Montserrat-Italic.ttf");
 }
+@font-face{
+  font-family: montserrat-bold-italic;
+  src: url("../fonts/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+  font-family: montserrat-black;
+  src: url("../fonts/Montserrat-Black.ttf");
+}
 
 
 
@@ -99,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-  background: #691c32;
+  background: #9f2241;
   color: #fff;
 }
 
@@ -221,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   transition: 0.3s;
   font-size: 15px;
-  font-family: "montserrat-regular";
+  font-family: "montserrat-medium";
  
 }
 
@@ -264,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #235C95;
+  color: #235b4e;
 }
 
 .nav-menu .drop-down > a:after {
@@ -984,7 +992,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #9d2348 !important;
+  background-color: #9f2241 !important;
   outline: none;
 }
 
@@ -1185,11 +1193,11 @@ section {
 }
 
 .events .card:hover .card-body {
-  border-color: #9d2348;
+  border-color: #b38e5d;
 }
 
 .events .card:hover .card-body .card-title a {
-  color: #9d2348;
+  color: #235b4e;
 }
 
 /*--------------------------------------------------------------
@@ -1644,7 +1652,7 @@ section {
 .listaCustom li::before { /* Añadimos contenido antes de cada elemento de la lista */
   content: "\1F30E"; /* Insertamos el marcador */
   padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
-  color:#9d2348; /* Coloreamos la viñeta */
+  color:#9f2241; /* Coloreamos la viñeta */
   }
 
 .listaCustom li b{
@@ -1980,14 +1988,14 @@ section {
   .encabezadoDescripcion{
     text-align: justify; 
     line-height : 25px;
-    font-weight: 600;
+    /*font-weight: 600;*/
     font-family: "montserrat-medium";
     /*margin-bottom: 30px;*/
   }
 
   .encabezadoDescripcion b{
     font-family: "montserrat-semibold"
-    color: #9d2348;
+    color: #9f2241;
   }
   .testimonial-item p{
     text-align: justify;
