@@ -28,9 +28,30 @@
   font-family: chinacat;
   src: url("../fonts/chinrg__.ttf");
 }
+@font-face{
+  font-family: montserrat-regular;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face{
+  font-family: montserrat-semibold;
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face{
+  font-family: montserrat-bold;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face{
+  font-family: montserrat-medium;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+@font-face{
+  font-family: montserrat-light;
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+
 
 body {
-  font-family: "century-gothic";
+  font-family: "montserrat-regular";
   color: #444444;
 }
 
@@ -44,7 +65,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "century-gothic";
+  font-family: "montserrat-regular";
   font-weight:600;
 }
 
@@ -137,10 +158,10 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #13322B;
   transition: all 0.5s;
   z-index: 997;
-  padding: 5px 0;
+  padding: 10px 0;
   box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
 }
 
@@ -192,15 +213,15 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #37423b;
+  color: white;
   transition: 0.3s;
-  font-size: 14px;
-  font-family: "century-gothic-bold";
-  font-weight: 500;
+  font-size: 15px;
+  font-family: "montserrat-regular";
+ 
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #235C95;
+  color: white;
 }
 
 .nav-menu .drop-down ul {
@@ -450,7 +471,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  font-family: "century-gothic-bold";
+  font-family: "montserrat-bold";
 }
 
 #hero h2 {
@@ -460,7 +481,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "century-gothic";
+  font-family: "montserrat-regular";
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -515,7 +536,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 6px;
   font-weight: 500;
   padding: 0;
   /*line-height: 1px;*/
@@ -523,26 +544,39 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "century-gothic-bold";
+  font-family: "montserrat-bold";
 }
 
-.section-title h2::after {
+.section-title h2::before {
   content: "";
-  width: 120px;
-  height: 1px;
+  width: 35px;
+  height: 5px;
   display: inline-block;
-  background:  #9d2348;
-  margin: 4px 10px;
+  background: #b38e5d;
+  margin: 0px 10px 0px 0px;
+}
+
+.section-title h3{
+  font-size: 12px;
+  color: #aaaaaa;
+  FONT-WEIGHT: 600;
+  letter-spacing: 2px;
+  font-family: 'montserrat-bold';
+  text-transform: uppercase;
 }
 
 .section-title p {
   margin: 0;
   margin: 0;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "century-gothic-bold";
+  font-family: "montserrat-medium";
   color: #37423b;
+}
+
+.section-title hr{
+  margin: 0 !important;
 }
 
 .breadcrumbs {
@@ -632,7 +666,7 @@ section {
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "century-gothic";
+  font-family: "montserrat-regular";
   font-size: 15px;
   font-weight: 600;
   color: #37423b;
@@ -1819,16 +1853,18 @@ section {
      box-shadow: 8px 8px 26px -7px rgba(0,0,0,0.47);
   }
 
+  /*
    #menuBar .active{
     border-bottom: 2px #9d2348  solid !important;
   }
-
+  */
+/*
   #menuBar li:hover{
     border-bottom: 2px #9d2348 solid !important;
     transition: linear;
-    /*transition-duration: .5s;*/
     transform: scaleX(1);
   }
+  */
 /* Boton Descarga */
   .btnDescargaContainer{
     text-align: left;
