@@ -69,11 +69,11 @@ body {
 }
 
 a {
-  color: #235C95;
+  color: #9F2241;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #9F2241;
   text-decoration: none;
 }
 
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #235C95;
+  border: 6px solid #691c32;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -1324,11 +1324,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #235C95;
+  color: white;
   float: left;
   width: 44px;
   height: 44px;
-  background: #ecf9f0;
+  background: #DDC9A3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1356,8 +1356,8 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #235C95;
-  color: #fff;
+  background: white;
+  color: #DDC9A3;
 }
 
 .contact .php-email-form {
@@ -1438,7 +1438,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #235C95;
+  background: #9d2449;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1447,7 +1447,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #00A6D6;
+  background: #9f2241;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1674,7 +1674,7 @@ section {
   margin-top: 25px;
   text-align: center;
   background:none;
-  padding: 30px 0;
+  padding: 14px 0;
   color: #fff;
 }
 
@@ -1701,7 +1701,7 @@ section {
   }
 
   .flip-card h4{
-    color: #30679e;
+    color: #235b4e;
     font-size: 16px;
     font-weight: 700;
     
@@ -2079,5 +2079,5 @@ section {
 }
 
 .footerClass{
-  background-image:  url("../img/footerimg.png");;
+  background-image:  url("../img/footerimg.png") !important;
 }
