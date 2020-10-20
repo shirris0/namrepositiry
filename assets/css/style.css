@@ -48,6 +48,19 @@
   font-family: montserrat-light;
   src: url("../fonts/Montserrat-Light.ttf");
 }
+@font-face{
+  font-family: montserrat-italic;
+  src: url("../fonts/Montserrat-Italic.ttf");
+}
+@font-face{
+  font-family: montserrat-bold-italic;
+  src: url("../fonts/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+  font-family: montserrat-black;
+  src: url("../fonts/Montserrat-Black.ttf");
+}
+
 
 
 body {
@@ -56,17 +69,17 @@ body {
 }
 
 a {
-  color: #235C95;
+  color: #9F2241;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #9F2241;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "montserrat-regular";
-  font-weight:600;
+  font-family: "montserrat-medium";
+  font-weight:100;
 }
 
 /*--------------------------------------------------------------
@@ -88,13 +101,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #235C95;
+  background: #b38e5d;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #00A6D6;
+  background: #9f2241;
   color: #fff;
 }
 
@@ -117,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #235C95;
+  border: 6px solid #691c32;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -173,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "century-gothic-bold";
+  font-family: "montserrat-semibold";
 }
 
 #header .logo a {
@@ -216,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   transition: 0.3s;
   font-size: 15px;
-  font-family: "montserrat-regular";
+  font-family: "montserrat-medium";
  
 }
 
@@ -259,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #235C95;
+  color: #235b4e;
 }
 
 .nav-menu .drop-down > a:after {
@@ -523,7 +536,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 52px 0;
   overflow: hidden;
 }
 
@@ -979,7 +992,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #9d2348 !important;
+  background-color: #9f2241 !important;
   outline: none;
 }
 
@@ -1040,7 +1053,7 @@ section {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
-  font-family: "century-gothic-bold";
+  font-family: "montserrat-semibold";
 }
 
 .course-details .course-info p {
@@ -1180,11 +1193,11 @@ section {
 }
 
 .events .card:hover .card-body {
-  border-color: #9d2348;
+  border-color: #b38e5d;
 }
 
 .events .card:hover .card-body .card-title a {
-  color: #9d2348;
+  color: #235b4e;
 }
 
 /*--------------------------------------------------------------
@@ -1214,7 +1227,7 @@ section {
   font-size: 36px;
   color: #235C95;
   font-weight: 600;
-  font-family: "century-gothic-bold";
+  font-family: "montserrat-semibold";
   margin-bottom: 20px;
 }
 
@@ -1270,7 +1283,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "century-gothic";
+  font-family: "montserrat-regular";
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1311,11 +1324,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #235C95;
+  color: white;
   float: left;
   width: 44px;
   height: 44px;
-  background: #ecf9f0;
+  background: #DDC9A3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1343,8 +1356,8 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #235C95;
-  color: #fff;
+  background: white;
+  color: #DDC9A3;
 }
 
 .contact .php-email-form {
@@ -1425,7 +1438,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #235C95;
+  background: #9d2449;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1434,7 +1447,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #00A6D6;
+  background: #9f2241;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1459,14 +1472,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #37423b;
+  color: white;
   font-size: 14px;
   background: #eef0ef;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f9faf9;
+  background: #13322B;
 }
 
 #footer .footer-top .footer-contact {
@@ -1485,14 +1498,14 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "century-gothic";
-  color: #777777;
+  font-family: "montserrat-regular";
+  color: white;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: white;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1509,9 +1522,10 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #235C95;
+  color: #b38e5d;
   font-size: 18px;
   line-height: 1;
+  font-weight: 900;
 }
 
 #footer .footer-top .footer-links ul li {
@@ -1525,7 +1539,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: white;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1601,7 +1615,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #235C95;
+  background: #b38e5d;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1614,8 +1628,8 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #00A6D6;
-  color: #fff;
+  background: #fff;
+  color: #b38e5d;
   text-decoration: none;
 }
 
@@ -1623,9 +1637,9 @@ section {
 /* Custom */
 .listaCustom li{
   margin-top: 5px;
-  font-size: 14px;
-  font-family: "century-gothic";
-  font-weight: 600;
+  font-size: 13px;
+  font-family: "montserrat-medium";
+  /*font-weight: 600;*/
   text-align: justify;
 }
 
@@ -1638,11 +1652,12 @@ section {
 .listaCustom li::before { /* Añadimos contenido antes de cada elemento de la lista */
   content: "\1F30E"; /* Insertamos el marcador */
   padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
-  color:#9d2348; /* Coloreamos la viñeta */
+  color:#9f2241; /* Coloreamos la viñeta */
   }
 
 .listaCustom li b{
-  font-family: century-gothic-bold;
+  font-family: "montserrat-medium";
+  font-weight: 100;
 }
 
 .events .card-body{
@@ -1659,7 +1674,7 @@ section {
   margin-top: 25px;
   text-align: center;
   background:none;
-  padding: 30px 0;
+  padding: 14px 0;
   color: #fff;
 }
 
@@ -1681,12 +1696,12 @@ section {
     width: 250px;
     height: 325px;
     margin-bottom: 20px;
-    font-family: "century-gothic";
+    font-family: "montserrat-medium";
     margin-left: 13%;
   }
 
   .flip-card h4{
-    color: #30679e;
+    color: #235b4e;
     font-size: 16px;
     font-weight: 700;
     
@@ -1932,7 +1947,7 @@ section {
     width: 120px !important;
   }
   html{
-    font-family: century-gothic;
+    font-family: "montserrat-medium";
   }
 
   .font-italic{ 
@@ -1973,14 +1988,14 @@ section {
   .encabezadoDescripcion{
     text-align: justify; 
     line-height : 25px;
-    font-weight: 600;
-    font-family: century-gothic;
+    /*font-weight: 600;*/
+    font-family: "montserrat-medium";
     /*margin-bottom: 30px;*/
   }
 
   .encabezadoDescripcion b{
-    font-family: century-gothic-bold;
-    color: #9d2348;
+    font-family: "montserrat-semibold"
+    color: #9f2241;
   }
   .testimonial-item p{
     text-align: justify;
@@ -2063,4 +2078,6 @@ section {
   cursor: pointer;
 }
 
-
+.footerClass{
+  background-image:  url("../img/footerimg.png") !important;
+}
