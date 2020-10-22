@@ -43,7 +43,6 @@ $( document ).ready(function() {
    
 
     descargarLibro = function(libro){
-        debugger;
         var url = host+"libros/"+libro+"/libro.pdf";
         switch(libro){
             case "1": url = "https://pnrn.s3.us-east-2.amazonaws.com/libros/libro.pdf"; break;
@@ -93,6 +92,7 @@ $( document ).ready(function() {
         $("#hero").remove();
         $("#main").load(host+"aboutContent.html",function(){
             cargarCarousel();
+            cargarCarouselBienvenida();
         });
         $("#about").addClass("active");     
         $('.back-to-top').trigger("click");   
@@ -167,6 +167,13 @@ $( document ).ready(function() {
         
         
     }
+
+    cargarCarouselBienvenida = function(){
+        $('.carousel-videos-welcome').carousel({
+            interval: false,
+          });
+    }
+    
 
 
 
