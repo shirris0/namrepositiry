@@ -1,4 +1,4 @@
-var host = "/";
+var host = "/namrepository/";
 
 $( document ).ready(function() {
 
@@ -44,9 +44,6 @@ $( document ).ready(function() {
 
     descargarLibro = function(libro){
         var url = host+"libros/"+libro+"/libro.pdf";
-        switch(libro){
-            case "1": url = "https://pnrn.s3.us-east-2.amazonaws.com/libros/libro.pdf"; break;
-        }
         //window.open(url);
         var req = new XMLHttpRequest();
         req.open("GET", url, true);

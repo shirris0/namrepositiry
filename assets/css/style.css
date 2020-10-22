@@ -1888,19 +1888,19 @@ section {
   }
 
   .btnDescargaContainer button{
-    background: url("../img/btnDescarga.png") top center;
+    background-color: #ffffff00;
     width: 134px;
     height: 60px;
     border: none;
   }
 
-  .btnDescargaContainer button:hover{
-    background: url("../img/btnDescargaHover.png") top center;
-  }
-
   .btnDescargaContainer button:focus{
     border: none;
     outline: none;
+  }
+
+  .btnDescargaContainer button img, .btnLeerContainer button img{
+    width: 100%;
   }
 /* Fin Boton Descarga */
 
@@ -1912,14 +1912,10 @@ section {
   }
 
   .btnLeerContainer button{
-    background: url("../img/btnDescarga.png") top center;
+    background-color: #ffffff00;
     width: 134px;
     height: 60px;
     border: none;
-  }
-
-  .btnLeerContainer button:hover{
-    background: url("../img/btnDescargaHover.png") top center;
   }
 
   .btnLeerContainer button:focus{
@@ -2085,8 +2081,10 @@ section {
 .video-responsive {
 	height: 0;
 	overflow: hidden;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
+	padding-bottom: 52%;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 	position: relative;
 	}
 .video-responsive iframe, .video-responsive object, .video-responsive embed {
