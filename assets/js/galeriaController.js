@@ -11,12 +11,12 @@ $( document ).ready(function() {
 });
 
 
-var noLibro1 = 40;
-var noLibro2 = 35;
-var noLibro3 = 42;
-var noLibro4 = 70;
-var noLibro5 = 86;
-var noLibro6 = 62;
+var noLibro1 = 20;
+var noLibro2 = 20;
+var noLibro3 = 20;
+var noLibro4 = 20;
+var noLibro5 = 20;
+var noLibro6 = 20;
 
 cargarGaleria = function(libro){
     
