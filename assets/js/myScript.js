@@ -2,7 +2,7 @@ var host = "/namrepository/";
 
 $( document ).ready(function() {
 
-
+    
 
     showBook = function(libro,cuento){
         var url = host+"libros/"+libro+"/Cuento"+cuento+"/cuento"+cuento+".html";
@@ -89,7 +89,6 @@ $( document ).ready(function() {
         $("#hero").remove();
         $("#main").load(host+"aboutContent.html",function(){
             cargarCarousel();
-            cargarCarouselBienvenida();
         });
         $("#about").addClass("active");     
         $('.back-to-top').trigger("click");   
@@ -116,44 +115,44 @@ $( document ).ready(function() {
 
         switch(id){
             case 1:
-                $("#videoCap").attr('src', 'https://www.youtube.com/embed/lDyM3mxsxDw');
+                $("#videoCap").attr('src', 'https://www.youtube.com/embed/VMKcnkwNAUE');
                 $("#tituloCap").text("Proceso Nacional de Reconciliación con la Naturaleza (PNRN) - Introducción");
                 $("#subtituloCap").text("");
                 
             break;
             
             case 2:
-                $("#videoCap").attr('src', 'https://www.youtube.com/embed/nM4KDC3s3xg');
+                $("#videoCap").attr('src', 'https://www.youtube.com/embed/GDCR_sgEeiw');
                 $("#tituloCap").text("Colección de Libros “Cuentos desde el Ombligo de la Luna” - Libro 1");
                 $("#subtituloCap").text("Consumismo");
             break;
 
             case 3:
-                $("#videoCap").attr('src', 'https://www.youtube.com/embed/PwsYlTstdjU');
+                $("#videoCap").attr('src', 'https://www.youtube.com/embed/LWhMpCKlzb0');
                 $("#tituloCap").text("Colección de Libros “Cuentos desde el Ombligo de la Luna” - Libro 2");
                 $("#subtituloCap").text("Empaques y etiquetados");
             break;
 
             case 4:
-                $("#videoCap").attr('src', 'https://www.youtube.com/embed/SPwR-vTFYxE');
+                $("#videoCap").attr('src', 'https://www.youtube.com/embed/sFQH_4vAwoo');
                 $("#tituloCap").text("Colección de Libros “Cuentos desde el Ombligo de la Luna” - Libro 3");
                 $("#subtituloCap").text("Huella del Bienestar");
             break;
 
             case 5:
-                $("#videoCap").attr('src', 'https://www.youtube.com/embed/loLcSfbtkjw');
+                $("#videoCap").attr('src', 'https://www.youtube.com/embed/XMncB8U2nok');
                 $("#tituloCap").text("Colección de Libros “Cuentos desde el Ombligo de la Luna” - Libro 4");
                 $("#subtituloCap").text("Enfermedades de la tierra");
             break;
 
             case 6:
-                $("#videoCap").attr('src', 'https://www.youtube.com/embed/xSm2QEw_kaw');
+                $("#videoCap").attr('src', 'https://www.youtube.com/embed/Wr9gUVPNWlw');
                 $("#tituloCap").text("Colección de Libros “Cuentos desde el Ombligo de la Luna” - Libro 5");
                 $("#subtituloCap").text("Enfermedades de la sociedad");
             break;
 
             case 7:
-                $("#videoCap").attr('src', 'https://www.youtube.com/embed/UFqRgZfTyMo');
+                $("#videoCap").attr('src', 'https://www.youtube.com/embed/FqFUUC3SGck');
                 $("#tituloCap").text("Colección de Libros “Cuentos desde el Ombligo de la Luna” - Libro 6");
                 $("#subtituloCap").text("La reconciliación");
             break;
@@ -165,11 +164,6 @@ $( document ).ready(function() {
         
     }
 
-    cargarCarouselBienvenida = function(){
-        $('.carousel-videos-welcome').carousel({
-            interval: false,
-          });
-    }
     
 
 
