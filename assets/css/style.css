@@ -1869,6 +1869,10 @@ section {
       width: 200px !important;
       height: 260px !important;
     }
+
+    .capacitacionMenu label{
+      font-size: 60% !important;
+    }
   
   }
 
