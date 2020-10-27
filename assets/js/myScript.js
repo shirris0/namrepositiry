@@ -61,6 +61,24 @@ $( document ).ready(function() {
         req.send();
     }
 
+    descargarAudio = function(url,name){
+        //window.open(url);
+        var req = new XMLHttpRequest();
+        req.open("GET", url, true);
+        req.responseType = "blob";
+      
+        req.onload = function (event) {
+          var blob = req.response;
+          console.log(blob.size);
+          var link=document.createElement('a');
+          link.href=window.URL.createObjectURL(blob);
+          link.download=name+ ".mp3";
+          link.click();
+        };
+      
+        req.send();
+    }
+
 
 
 
