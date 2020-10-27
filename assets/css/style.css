@@ -518,6 +518,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 993px) {
+  .col-1-5{
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+}
+
 @media (max-width: 768px) {
   #hero {
     height: 100vh;
@@ -535,6 +544,9 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 25% !important;
     padding-right: 5px !important;
     padding-left: 5px !important;
+  }
+  .capacitacionMenu label{
+    font-size: 83% !important;
   }
 }
 
@@ -1800,6 +1812,10 @@ section {
       height: 650px;
     }
 
+    .capacitacionMenu label{
+      font-size: 90% !important;
+    }
+
     .page-wrapper, .page , .shadow, .book div img{
       width: 500px !important;
       height: 650px !important;
@@ -1814,6 +1830,10 @@ section {
       height: 487px;
     }
 
+    .capacitacionMenu label{
+      font-size: 90% !important;
+    }
+
     .page-wrapper, .page , .shadow, .book div img{
       width: 375px !important;
       height: 487px !important;
@@ -1826,6 +1846,10 @@ section {
       height: 325px;
     }
 
+    .capacitacionMenu label{
+      font-size: 65% !important;
+    }
+
     .page-wrapper, .page , .shadow, .book div img{
       width: 250px !important;
       height: 325px !important;
@@ -1833,6 +1857,7 @@ section {
 
   
   }
+
 
   @media (max-width: 540px) {
     .book{
@@ -1851,6 +1876,10 @@ section {
     .book{
       width: 326px !important;
       height: 212px;
+    }
+
+    .capacitacionMenu label{
+      font-size: 55% !important;
     }
 
     .page-wrapper, .page , .shadow, .book div img{
@@ -1997,7 +2026,7 @@ section {
   }
 
   .encabezadoDescripcion b{
-    font-family: "montserrat-semibold"
+    font-family: "montserrat-semibold";
     color: #9f2241;
   }
   .testimonial-item p{
