@@ -8,7 +8,7 @@ $libro= new Libro();
 
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
 	if (isset($_POST['insertar'])) {
-		$target_dir = "//home//nammagic//defensoresdelanaturaleza.mx//repositorioArchivos";
+		$target_dir = "/home/nammagic/defensoresdelanaturaleza.mx/repositorioArchivos";
 		$file_name = $_FILES["fileToUpload"]["name"];
 		$file_name = date("Ymdhms")."_".$file_name;
 		$target_file = $target_dir.basename($file_name);
