@@ -194,11 +194,11 @@
           <select class="custom-select" required name="objetivoReporte">
             <option value="">Objetivo del reporte</option>
             <option value="RESCATE, CONOCIMIENTO Y SABERES ANCESTRALES">Rescate, conocimiento y saberes ancestrales</option>
-            <option value="REDUCCION DE RESIDUOS">Reducción de resíduos</option>
-            <option value="RIESGO SANITARIO">Riesgo sanitario</option>
-            <option value="DEFENSA DE LA NATURALEZA, LOS ECOSISTEMAS Y LA BIODIVERSIDAD">Defensa de la Naturaleza, los ecosistemas y la biodiversidad</option>
-            <option value="RECONSTRUCCIÓN DEL TEJIDO SOCIAL, RONDA DE PAZ">Reconstrucción del Tejido Social, ronda de paz</option>
-            <option value="OTRAS ACTIVIDADES">Otras actividades</option>
+            <option value="REDUCCION DE RESIDUOS">Reducción de residuos</option>
+            <option value="RIESGO SANITARIO">Riesgos sanitarios</option>
+            <option value="DEFENSA DE LA NATURALEZA, LOS ECOSISTEMAS Y LA BIODIVERSIDAD"><b>Defensa de la Naturaleza.</b> Los ecosistemas y la biodiversidad</option>
+            <option value="RECONSTRUCCIÓN DEL TEJIDO SOCIAL, RONDA DE PAZ">Reconstrucción del Tejido Social. Ronda de la Paz.</option>
+            <option value="OTRAS ACTIVIDADES">Otras actividades.</option>
           </select>
           <div class="invalid-feedback">Example invalid custom select feedback</div>
         </div>
