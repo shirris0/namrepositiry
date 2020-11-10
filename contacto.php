@@ -105,11 +105,11 @@
           <h3>Datos generales</h3>
           <div class="form-group">
             <label for="name">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            <input type="text" required class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
           </div>
           <div class="form-group">
             <label for="name">Primer apellido</label>
-            <input type="text" class="form-control" id="nombre" name="primerApellido" placeholder="Ingrese su primer apellido">
+            <input type="text" required class="form-control" id="nombre" name="primerApellido" placeholder="Ingrese su primer apellido">
           </div>
           <div class="form-group">
             <label for="name">Segundo apellido</label>
@@ -177,7 +177,7 @@
           <h3>Datos del hallazgo</h3>
           <div class="form-group">
             <label for="name">Título</label>
-            <input type="text" class="form-control" name="titulo"  placeholder="Ingrese título del hallazgo">
+            <input type="text" class="form-control" required name="titulo"  placeholder="Ingrese título del hallazgo">
           </div>
           <div class="form-group">
             <label for="name">Fecha del hallazgo</label>
@@ -185,9 +185,9 @@
           </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Descripción</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="descripcion"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" maxlength="270" name="descripcion"></textarea>
           <small id="passwordHelpBlock" class="form-text text-muted">
-            Describe los hechos en máximo 100 caracteres
+            Describe los hechos en máximo 270 caracteres
           </small>
         </div>
         <div class="form-group">
