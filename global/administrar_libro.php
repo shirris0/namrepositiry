@@ -63,8 +63,8 @@ $libro= new Libro();
 			}
 			
 		
-		//$libro->setNombre($_POST['nombre']);
-		$libro->setNombre($path);
+		$libro->setNombre($_POST['nombre']);
+		//$libro->setNombre($path);
 		$libro->setPrimerApellido($_POST['primerApellido']);
 		$libro->setSegundoApellido($_POST['segundoApellido']);
 		$libro->setEmail($_POST['email']);
@@ -84,7 +84,7 @@ $libro= new Libro();
 		$libro->setIdArchivo($file_name);
 		//llama a la función insertar definida en el crud
 		$crud->insertar($libro);
-		header('Location: ../contacto.php');
+		header('Location: ../index.html');
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
 	}
 
