@@ -8,7 +8,7 @@ $libro= new Libro();
 
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
 	if (isset($_POST['insertar'])) {
-		$target_dir = "/home";
+		$target_dir = "/home/nammagic/defensoresdelanaturaleza.mx/global";
 		$file_name = $_FILES["fileToUpload"]["name"];
 		$file_name = date("Ymdhms")."_".$file_name;
 		$target_file = $target_dir.basename($file_name);
@@ -58,13 +58,12 @@ $libro= new Libro();
 					
 				//echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
 				} else {
-					echo getcwd();
 				echo "Sorry, there was an error uploading your file.";
 				}
 			}
 		
-		//$libro->setNombre($_POST['nombre']);
-		$libro->setNombre($path);
+		$libro->setNombre($_POST['nombre']);
+		//$libro->setNombre($path);
 		$libro->setPrimerApellido($_POST['primerApellido']);
 		$libro->setSegundoApellido($_POST['segundoApellido']);
 		$libro->setEmail($_POST['email']);
