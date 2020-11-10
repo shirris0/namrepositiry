@@ -96,42 +96,50 @@
 
       </div>
       <div class="tab-pane fade" id="nav-denuncia" role="tabpanel" aria-labelledby="nav-denuncia-tab">
-
+<form  action='global/administrar_libro.php' method='post' enctype="multipart/form-data">
         <div class="container" data-aos="fade-up">
           <div class="row mt-5" style="margin-bottom: 25px;">
-<div  class="col-sm-6">           
-        <form>
+
+      <div  class="col-sm-6">        
+        
           <h3>Datos generales</h3>
           <div class="form-group">
             <label for="name">Nombre</label>
-            <input type="text" class="form-control" id="name"  placeholder="Ingrese su nombre">
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="form-group">
+            <label for="name">Primer apellido</label>
+            <input type="text" class="form-control" id="nombre" name="primerApellido" placeholder="Ingrese su primer apellido">
+          </div>
+          <div class="form-group">
+            <label for="name">Segundo apellido</label>
+            <input type="text" class="form-control" id="nombre" name="segundoApellido" placeholder="Ingrese su segundo apellido">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ingrese su correo electrónico">
+            <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico">
           </div>
 
           <div class="form-group">
             <label for="name">Lugar de trabajo</label>
-            <select class="custom-select" required>
+            <select class="custom-select" required name="lugarDeTrabajo">
               <option value="">Soy Defensor de la Naturaleza</option>
-              <option value="1">Personal de SEMARNAT</option>
-              <option value="2">Sembradores de Vida</option>
-              <option value="3">Cultura Comunitaria</option>
-              <option value="4">Verificador Sanitario</option>
+              <option value="PERSONAL DE SEMARNAT">Personal de SEMARNAT</option>
+              <option value="SEMBRADORES DE VIDA">Sembradores de Vida</option>
+              <option value="CULTURA COMUNITARIA">Cultura Comunitaria</option>
+              <option value="VVERIFICADOR SANITARIO">Verificador Sanitario</option>
             </select>
             <div class="invalid-feedback">Example invalid custom select feedback</div>
           </div>
 
           <div class="form-group">
             <label for="name">Código postal</label>
-            <label for="name">Ingrese Código Postal</label>
-            <input type="number" class="form-control" id="cp" title="Three letter country code" pattern="^[0-9]{5}$" placeholder="Ingrese su Código Postal" onfocusout='formularioController.changeCP(this)'>
+            <input type="number" name="codigoPostal" class="form-control"  title="Three letter country code" pattern="^[0-9]{5}$" placeholder="Ingrese su Código Postal" onfocusout='formularioController.changeCP(this)'>
           </div>
 
           <div class="form-group">
             <label for="name">Entidad federativa</label>
-            <select class="custom-select" required id="idEntidades" onchange='formularioController.changeEntidades()'>
+            <select class="custom-select" name="entidadFederativa" required id="idEntidades" onchange='formularioController.changeEntidades()'>
               <option value="N/A">Seleccione Entidad Federativa</option>
             </select>
             <div class="invalid-feedback">Example invalid custom select feedback</div>
@@ -139,7 +147,7 @@
 
           <div class="form-group">
             <label for="name">Municipio</label>
-            <select class="custom-select" required id="idMunicipios" onchange='formularioController.changeMunicipios()'>
+            <select class="custom-select" name="municipio" required id="idMunicipios" onchange='formularioController.changeMunicipios()'>
               <option value="N/A">Seleccione Municipio</option>
             </select>
             <div class="invalid-feedback">Example invalid custom select feedback</div>
@@ -147,7 +155,7 @@
 
           <div class="form-group">
             <label for="name">Localidad</label>
-            <select class="custom-select" required id="idColonias">
+            <select class="custom-select" name="localidad" required id="idColonias">
               <option value="N/A">Seleccione Localidad / Colonia</option>
             </select>
             <div class="invalid-feedback">Example invalid custom select feedback</div>
@@ -157,37 +165,40 @@
 
           <div class="form-group">
             <label for="name">Teléfono</label>
-            <input type="text" class="form-control" id="name"  placeholder="Ingrese su teléfono (opcional)">
+            <input type="text" class="form-control" name="telefono" placeholder="Ingrese su teléfono (opcional)">
           </div>
 
 
           
-        </form>
+        
 </div>
 <div  class="col-sm-6">
-        <form>
-        
+
           <h3>Datos del hallazgo</h3>
           <div class="form-group">
             <label for="name">Título</label>
-            <input type="text" class="form-control" id="name"  placeholder="Ingrese título del hallazgo">
+            <input type="text" class="form-control" name="titulo"  placeholder="Ingrese título del hallazgo">
           </div>
           <div class="form-group">
             <label for="name">Fecha del hallazgo</label>
-            <input type="date" class="form-control" id="name"  placeholder="Ingrese la fecha">
+            <input type="date" class="form-control" name="fechaReporte"  placeholder="Ingrese la fecha">
           </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Descripción</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="descripcion"></textarea>
           <small id="passwordHelpBlock" class="form-text text-muted">
             Describe los hechos en máximo 100 caracteres
           </small>
         </div>
         <div class="form-group">
-          <select class="custom-select" required>
+          <select class="custom-select" required name="objetivoReporte">
             <option value="">Objetivo del reporte</option>
-            <option value="1">Reducción de resíduos</option>
-            <option value="2">Riesgo sanitario</option>
+            <option value="RESCATE, CONOCIMIENTO Y SABERES ANCESTRALES">Rescate, conocimiento y saberes ancestrales</option>
+            <option value="REDUCCION DE RESIDUOS">Reducción de resíduos</option>
+            <option value="RIESGO SANITARIO">Riesgo sanitario</option>
+            <option value="DEFENSA DE LA NATURALEZA, LOS ECOSISTEMAS Y LA BIODIVERSIDAD">Defensa de la Naturaleza, los ecosistemas y la biodiversidad</option>
+            <option value="RECONSTRUCCIÓN DEL TEJIDO SOCIAL, RONDA DE PAZ">Reconstrucción del Tejido Social, ronda de paz</option>
+            <option value="OTRAS ACTIVIDADES">Otras actividades</option>
           </select>
           <div class="invalid-feedback">Example invalid custom select feedback</div>
         </div>
@@ -195,30 +206,33 @@
         <div class="form-group">
           <label for="name">¿A cuántas personas impactaste?</label></br>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <input class="form-check-input" type="radio" name="unoa10" id="inlineRadio1" value="1">
             <label class="form-check-label" for="inlineRadio1">De 1 a 10</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <input class="form-check-input" type="radio" name="dieza50" id="inlineRadio2" value="1">
             <label class="form-check-label" for="inlineRadio2">De 10 a 50</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <input class="form-check-input" type="radio" name="mas50" id="inlineRadio3" value="1">
             <label class="form-check-label" for="inlineRadio3">Más de 50</label>
           </div>
         </div>
-
-        <div class="col-md-12 form-group" style="padding: 0px;">
-          <label for="name">Compartenos tu evidencia</label></br>
-          <input class="form-control" type="file" name="adjunto" id="adjunto">
-        </div>
+  
+            <input type="file" name="fileToUpload" id="fileToUpload" multiple="true">
+        <input type='hidden' name='insertar' value='insertar'>
         <div class="form-group" style="text-align: right;">
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary" value="Guardar">Enviar</button>
         </div>
-        </form>
+       
       </div> 
         </div>
          </div>
+
+
+
+        </form>
+
 
       </div>
     </div>
