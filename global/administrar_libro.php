@@ -8,7 +8,7 @@ $libro= new Libro();
 
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
 	if (isset($_POST['insertar'])) {
-		$target_dir = "/home/nammagic/defensoresdelanaturaleza.mx/global";
+		$target_dir = "//home//nammagic//defensoresdelanaturaleza.mx//repositorioArchivos";
 		$file_name = $_FILES["fileToUpload"]["name"];
 		$file_name = date("Ymdhms")."_".$file_name;
 		$target_file = $target_dir.basename($file_name);
@@ -19,7 +19,7 @@ $libro= new Libro();
 		
 
 		// Check if image file is a actual image or fake image
-		/*	if(isset($_POST["submit"])) {
+			if(isset($_POST["submit"])) {
 				$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
 				if($check !== false) {
 				echo "File is an image - " . $check["mime"] . ".";
@@ -61,10 +61,10 @@ $libro= new Libro();
 				echo "Sorry, there was an error uploading your file.";
 				}
 			}
-			*/
+			
 		
-		$libro->setNombre($_POST['nombre']);
-		//$libro->setNombre($path);
+		//$libro->setNombre($_POST['nombre']);
+		$libro->setNombre($path);
 		$libro->setPrimerApellido($_POST['primerApellido']);
 		$libro->setSegundoApellido($_POST['segundoApellido']);
 		$libro->setEmail($_POST['email']);
