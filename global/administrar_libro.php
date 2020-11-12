@@ -8,7 +8,7 @@ $libro= new Libro();
 
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
 	if (isset($_POST['insertar'])) {
-		$target_dir = "/home/nammagic/defensoresdelanaturaleza.mx/repositorioArchivos";
+		$target_dir = "/home/nammagic/defensoresdelanaturaleza.mx/repositorioArchivos/";
 		$file_name = $_FILES["fileToUpload"]["name"];
 		$file_name = date("Ymdhms")."_".$file_name;
 		$target_file = $target_dir.basename($file_name);
@@ -92,7 +92,7 @@ $libro= new Libro();
 		$libro->setIdArchivo($file_name);
 		//llama a la función insertar definida en el crud
 		$crud->insertar($libro);
-		//header('Location: https://defensoresdelanaturaleza.mx/');
+		header('Location: https://defensoresdelanaturaleza.mx/',true);
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
 	}
 
