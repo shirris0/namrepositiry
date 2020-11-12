@@ -92,10 +92,14 @@ $libro= new Libro();
 		$libro->setIdArchivo($file_name);
 		//llama a la función insertar definida en el crud
 		$crud->insertar($libro);
+		phpAlert("El formulario ha sido enviado de forma correcta. Gracias!");
 		header('Location: https://defensoresdelanaturaleza.mx/',true);
 	    exit();
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
 	}
 
+	function phpAlert($msg) {
+		echo '<script type="text/javascript">alert("' . $msg . '")</script>';
+	}
 	
 ?>
