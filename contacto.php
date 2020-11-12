@@ -192,8 +192,8 @@
         </div>
         <div class="form-group">
           <select class="custom-select" required name="objetivoReporte">
-            <option value="">Objetivo del reporte</option>
-            <option value="RESCATE, CONOCIMIENTO Y SABERES ANCESTRALES">Rescate, conocimiento y saberes ancestrales</option>
+            <option value="">Objetivo del reporte / Encargos</option>
+            <option value="RESCATE, CONOCIMIENTOS Y SABERES ANCESTRALES">Rescate, conocimientos y saberes ancestrales</option>
             <option value="REDUCCION DE RESIDUOS">Reducción de residuos</option>
             <option value="RIESGO SANITARIO">Riesgos sanitarios</option>
             <option value="DEFENSA DE LA NATURALEZA, LOS ECOSISTEMAS Y LA BIODIVERSIDAD"><b>Defensa de la Naturaleza.</b> Los ecosistemas y la biodiversidad</option>
