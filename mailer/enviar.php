@@ -45,7 +45,7 @@ $file = chunk_split(base64_encode($file));
 // Datos de la cuenta de correo utilizada para enviar v�a SMTP
 $smtpHost = "mail.nammagicoymexicano.org";  // Dominio alternativo brindado en el email de alta 
 $smtpUsuario = "contacto@nammagicoymexicano.org";  // Mi cuenta de correo
-$smtpClave = "-Itv_OVN07gn";  
+$smtpClave = "M7P?V+DVn!xv";  
 
 
 

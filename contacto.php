@@ -96,7 +96,7 @@
 
       </div>
       <div class="tab-pane fade" id="nav-denuncia" role="tabpanel" aria-labelledby="nav-denuncia-tab">
-<form  action='global/administrar_libro.php' method='post' enctype="multipart/form-data">
+<form  action='global/administrar_libro.php' method='post' class="php-email-form" enctype="multipart/form-data" id="formulario">
         <div class="container" data-aos="fade-up">
           <div class="row mt-5" style="margin-bottom: 25px;">
 
@@ -224,11 +224,16 @@
         <div class="form-group" style="text-align: right;">
           <button type="submit" class="btn btn-primary" value="Guardar">Enviar</button>
         </div>
+        <div class="mb-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Su mensaje ha sido enviado. Gracias!</div>
+        </div> 
        
       </div> 
         </div>
          </div>
-
+       
 
 
         </form>
