@@ -225,9 +225,7 @@
           <button type="submit" class="btn btn-primary" value="Guardar">Enviar</button>
         </div>
         <div class="mb-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Su mensaje ha sido enviado. Gracias!</div>
+          <div class="sent-message" style="display: none;">Su mensaje ha sido enviado. Gracias!</div>
         </div> 
        
       </div> 

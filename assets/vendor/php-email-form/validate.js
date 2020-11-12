@@ -138,6 +138,9 @@
       processData: false,  
       contentType: false
     }).done( function(msg){
+      if(msg == 'OK_FORMULARIO'){
+        this_form.find('.sent-message').css("display","block");
+      }
       if (msg == 'OK') {
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
