@@ -8,7 +8,7 @@ $libro= new Libro();
 
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
 	if (isset($_POST['insertar'])) {
-		$target_dir = "/home/nammagic/defensoresdelanaturaleza.mx/repositorioArchivos";
+		$target_dir = getcwd();//"/home/nammagic/defensoresdelanaturaleza.mx/repositorioArchivos";
 		$file_name = $_FILES["fileToUpload"]["name"];
 		$file_name = date("Ymdhms")."_".$file_name;
 		$target_file = $target_dir.basename($file_name);
@@ -54,11 +54,19 @@ $libro= new Libro();
 				echo "Sorry, your file was not uploaded.";
 			// if everything is ok, try to upload file
 			} else {
-				if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+				try {
+					$retorno = move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+
+				} catch (Exception $e) {
+					die ('File did not upload: ' . $e->getMessage());
+				}
+				
+				if ($retorno) {
 					
 				//echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
 				} else {
 				echo "Sorry, there was an error uploading your file.";
+				header('Location: https://defensoresdelanaturaleza.mx/');
 				}
 			}
 			
