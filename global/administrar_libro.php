@@ -93,6 +93,7 @@ $libro= new Libro();
 		//llama a la función insertar definida en el crud
 		$crud->insertar($libro);
 		header('Location: https://defensoresdelanaturaleza.mx/',true);
+	    exit();
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
 	}
 

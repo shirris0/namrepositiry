@@ -34,7 +34,7 @@ require_once('conexion.php');
 			$insert->bindValue('mas50',$libro->getMascincuenta());
 			$insert->bindValue('idArchivo',$libro->getIdArchivo());
 			$insert->execute();
-
+			
 		}
 
 		
