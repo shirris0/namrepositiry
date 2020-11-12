@@ -1,4 +1,3 @@
-
 <?php
 class  Db{
 private static $conexion=NULL;
