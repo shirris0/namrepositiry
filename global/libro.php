@@ -18,9 +18,11 @@
 		private $unoa10;
 		private $dieza50;
 		private $mascincuenta;
+		private $evidenciaprivada;
 		private $idArchivo;
 		private $autor;
 		private $anio_edicion;
+		
 
 		function __construct(){}
 
@@ -166,6 +168,14 @@
 
 		public function setIdArchivo($idArchivo){
 			$this->idArchivo = $idArchivo;
+		}
+
+		public function getEvidenciaPrivada(){
+		return $this->evidenciaprivada;
+		}
+
+		public function setEvidenciaPrivada($evidenciaprivada){
+			$this->evidenciaprivada = $evidenciaprivada;
 		}
 
 

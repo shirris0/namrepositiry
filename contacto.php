@@ -198,6 +198,7 @@
             <option value="RIESGO SANITARIO">Riesgos sanitarios</option>
             <option value="DEFENSA DE LA NATURALEZA, LOS ECOSISTEMAS Y LA BIODIVERSIDAD"><b>Defensa de la Naturaleza.</b> Los ecosistemas y la biodiversidad</option>
             <option value="RECONSTRUCCIÓN DEL TEJIDO SOCIAL, RONDA DE PAZ">Reconstrucción del Tejido Social. Ronda de la Paz.</option>
+            <option value="PROTECCION A LA FAUNA SILVESTRE">Protección a la fauna silvestre</option>
             <option value="OTRAS ACTIVIDADES">Otras actividades.</option>
           </select>
           <div class="invalid-feedback">Example invalid custom select feedback</div>
@@ -218,6 +219,18 @@
             <label class="form-check-label" for="inlineRadio3">Más de 50</label>
           </div>
         </div>
+
+        <div class="form-group">
+        <label for="name">¿Deseas que tu evidencia sea pública?</label>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="evidenciaPrivada" id="inlineRadioE1" value="1" selected>
+            <label class="form-check-label" for="inlineRadioE1">Sí</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="evidenciaPrivada" id="inlineRadioE2" value="0">
+            <label class="form-check-label" for="inlineRadioE2">No</label>
+          </div>
+      </div>
   
             <input type="file" name="fileToUpload" id="fileToUpload" multiple="true">
         <input type='hidden' name='insertar' value='insertar'>
