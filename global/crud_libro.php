@@ -32,7 +32,7 @@ require_once('conexion.php');
 			$insert->bindValue('unoa10',$libro->getUnoa10());
 			$insert->bindValue('dieza50',$libro->getDieza50());
 			$insert->bindValue('mas50',$libro->getMascincuenta());
-			$insert->bindValue('evidenciaPrivada',$libro->getEvidenciaPrivada());
+			//$insert->bindValue('evidenciaPrivada',$libro->getEvidenciaPrivada());
 			$insert->bindValue('idArchivo',$libro->getIdArchivo());
 			$insert->execute();
 			

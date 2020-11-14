@@ -89,7 +89,7 @@ $libro= new Libro();
 		$libro->setUnoa10($_POST['unoa10']);
 		$libro->setDieza50($_POST['dieza50']);
 		$libro->setMascincuenta($_POST['mas50']);
-		$libro->setEvidenciaPrivada($_POST['evidenciaPrivada']);
+		//$libro->setEvidenciaPrivada($_POST['evidenciaPrivada']);
 		$libro->setIdArchivo($file_name);
 		//llama a la función insertar definida en el crud
 		$crud->insertar($libro);
