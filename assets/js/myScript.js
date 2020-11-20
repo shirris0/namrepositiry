@@ -40,6 +40,24 @@ $( document ).ready(function() {
        
     };
 
+    descargarIlustraciones = function(ilustracion){
+        var url = host+"libros/"+ilustracion+"/Ilustraciones.zip";
+        //window.open(url);
+        var req = new XMLHttpRequest();
+        req.open("GET", url, true);
+        req.responseType = "blob";
+      
+        req.onload = function (event) {
+          var blob = req.response;
+          console.log(blob.size);
+          var link=document.createElement('a');
+          link.href=window.URL.createObjectURL(blob);
+          link.download="Ilustracion_"+ ilustracion+ ".zip";
+          link.click();
+        };
+      
+        req.send();
+    }
    
 
     descargarLibro = function(libro){

@@ -18,11 +18,13 @@ var noLibro4 = 20;
 var noLibro5 = 20;
 var noLibro6 = 20;
 
+
 cargarGaleria = function(libro){
     
     //Limpieza
     $("#idCarouselGaleria").empty();
     $("#idOLGaleria").empty();
+    $(".btnDescargaContainer").remove();
 
     var noIlustraciones;
 
@@ -66,6 +68,8 @@ cargarGaleria = function(libro){
 
     $("#idCarouselGaleria").append(str);
     $("#idOLGaleria").append(str2);
+
+    $("#idCarouselGaleria").parent().append(" <div class='btnDescargaContainer' style='text-align: center; margin-left: 0;'><button onclick='descargarIlustraciones("+libro+")'><img src='assets/img/btnDescarga.png' ></button></div>");
     
 
 }

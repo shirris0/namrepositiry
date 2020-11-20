@@ -67,7 +67,7 @@ $mail->From = $email; // Email desde donde env�o el correo.
 $mail->FromName = $nombre;
 $mail->AddAddress($destinatario); // Esta es la direcci�n a donde enviamos los datos del formulario
 
-$mail->Subject = "Contacto PNRN"; // Este es el titulo del email.
+$mail->Subject = "Contacto Proceso Nacional de Reconciliación con la Naturaleza"; // Este es el titulo del email.
 $mensajeHtml = nl2br($mensaje);
 $mail->Body = "
 <html> 
