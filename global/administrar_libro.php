@@ -44,7 +44,9 @@ $libro= new Libro();
 			
 			// Allow certain file formats
 			if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-			&& $imageFileType != "gif" && $imageFileType != "mp3" && $imageFileType != "mp4" && $imageFileType != "wav" && $imageFileType != "avi") {
+			&& $imageFileType != "gif" && $imageFileType != "mp3" && $imageFileType != "mp4" && $imageFileType != "wav" && $imageFileType != "avi"
+			&& $imageFileType != "docx" && $imageFileType != "pptx" && $imageFileType != "zip" && $imageFileType != "rar" && $imageFileType != "xls"
+			&& $imageFileType != "pdf" && $imageFileType != "xlsx" ) {
 				#echo "Sorry, lo siento este tipo de archivos no esta permitido.";
 				$uploadOk = 0;
 			}
