@@ -88,14 +88,16 @@ cargarGaleriaTerritorio = function(carpeta){
 
     switch(carpeta){
         case 1: 
-            noIlustraciones = 27;
+            noIlustraciones = 30;
             nomCarpeta = "Capoluca";
         break;
         case 2:
-            noIlustraciones = noLibro2;
+            noIlustraciones = 23;
+            nomCarpeta = "Ixhuapan";
         break;
         case 3:
-            noIlustraciones = noLibro3;
+            noIlustraciones = 24;
+            nomCarpeta = "Xpujil";
         break;
         case 4:
             noIlustraciones = noLibro4;

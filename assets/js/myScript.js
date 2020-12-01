@@ -147,6 +147,17 @@ $( document ).ready(function() {
         element.setAttribute('src', url);
     }
 
+    hoverLibroMenuTerritorio = function(element,libro) {
+        var url = host+"assets/img/"+libro+"Hover.png";
+        element.setAttribute('src', url);
+      }
+      
+    unhoverLibroMenuTerritorio = function(element,libro) {
+        var url = host+"assets/img/"+libro+".png";
+        element.setAttribute('src', url);
+    }
+
+
     abrirCapacitacion = function(id){
 
         switch(id){
