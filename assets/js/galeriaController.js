@@ -96,7 +96,7 @@ cargarGaleriaTerritorio = function(carpeta){
             nomCarpeta = "Ixhuapan";
         break;
         case 3:
-            noIlustraciones = 24;
+            noIlustraciones = 28;
             nomCarpeta = "Xpujil";
         break;
         case 4:
