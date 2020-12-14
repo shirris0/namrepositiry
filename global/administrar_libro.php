@@ -95,8 +95,9 @@ $libro= new Libro();
 		//$libro->setEvidenciaPrivada($_POST['evidenciaPrivada']);
 		$libro->setIdArchivo($file_name);
 		//llama a la función insertar definida en el crud
-		$crud->insertar($libro);
 		enviarRespuesta('leyva393@hotmail.com', 'Rodrigo Leyva');
+		$crud->insertar($libro);
+		
 		/*
 		header('Location: https://defensoresdelanaturaleza.mx/',true);
 		phpAlert("El formulario ha sido enviado de forma correcta. Gracias!");
