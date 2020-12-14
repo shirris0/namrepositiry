@@ -6,7 +6,7 @@ include_once '../mailer/contacto.php';
 
 $crud= new CrudLibro();
 $libro= new Libro();
-
+	
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
 	if (isset($_POST['insertar'])) {
 		$target_dir =  "/home/nammagic/defensoresdelanaturaleza.mx/repositorioArchivos/";//getcwd();
@@ -73,7 +73,7 @@ $libro= new Libro();
 				}
 			}
 			
-		
+		enviarRespuesta($_POST['email'], $_POST['nombre']);
 		$libro->setNombre($_POST['nombre']);
 		//$libro->setNombre($path);
 		$libro->setPrimerApellido($_POST['primerApellido']);
