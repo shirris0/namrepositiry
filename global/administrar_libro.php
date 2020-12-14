@@ -2,6 +2,7 @@
 //incluye la clase Libro y CrudLibro
 require_once('crud_libro.php');
 require_once('libro.php');
+include_once '../mailer/contacto.php';
 
 $crud= new CrudLibro();
 $libro= new Libro();
@@ -95,6 +96,7 @@ $libro= new Libro();
 		$libro->setIdArchivo($file_name);
 		//llama a la función insertar definida en el crud
 		$crud->insertar($libro);
+		enviarRespuesta($_POST['email'], $_POST['nombre']);
 		/*
 		header('Location: https://defensoresdelanaturaleza.mx/',true);
 		phpAlert("El formulario ha sido enviado de forma correcta. Gracias!");
