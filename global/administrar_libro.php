@@ -96,7 +96,7 @@ $libro= new Libro();
 		$libro->setIdArchivo($file_name);
 		//llama a la función insertar definida en el crud
 		$crud->insertar($libro);
-		enviarRespuesta($_POST['email'], $_POST['nombre']);
+		//enviarRespuesta($_POST['email'], $_POST['nombre']);
 		/*
 		header('Location: https://defensoresdelanaturaleza.mx/',true);
 		phpAlert("El formulario ha sido enviado de forma correcta. Gracias!");
