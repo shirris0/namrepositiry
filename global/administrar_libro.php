@@ -95,7 +95,6 @@ $libro= new Libro();
 		//$libro->setEvidenciaPrivada($_POST['evidenciaPrivada']);
 		$libro->setIdArchivo($file_name);
 		//llama a la función insertar definida en el crud
-		enviarRespuesta('leyva393@hotmail.com', 'Rodrigo Leyva');
 		$crud->insertar($libro);
 		
 		/*

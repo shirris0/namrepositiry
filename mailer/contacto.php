@@ -11,7 +11,7 @@ function enviarRespuesta($email, $nombre){
     $oMail = new PHPMailer();
     $oMail->isSMTP();
     $oMail->Host="mail.nammagicoymexicano.org";
-    $oMail->Port=465;
+    $oMail->Port=587;
     $oMail->SMTPSecure="tls";
     $oMail->SMTPAuth=true;
     $oMail->Username="contacto@nammagicoymexicano.org";
@@ -35,6 +35,14 @@ function enviarRespuesta($email, $nombre){
         <br />
         
         ";
+
+        $oMail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );
     
     if(!$oMail->send()){
         echo $oMail->ErrorInfo;
