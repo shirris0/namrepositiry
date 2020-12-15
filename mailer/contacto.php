@@ -18,8 +18,8 @@ function enviarRespuesta($email, $nombre){
     $oMail->Password="M7P?V+DVn!xv";
     $oMail->setFrom("contacto@nammagicoymexicano.org","Defensores de la Naturaleza");
     $oMail->addAddress($email,$nombre);
-    $oMail->Subject="Gracias por comunicaste con Nosotros";
-    $oMail->msgHTML("Hola soy un mensaje de prueba");
+    $oMail->Subject="Gracias por comunicarte con Nosotros";
+    $oMail->msgHTML("");
     $oMail->AddEmbeddedImage('../assets/img/respuesta/Gracias-por-escribirnos.jpg', 'gracias');
     $oMail->Body = "
         
