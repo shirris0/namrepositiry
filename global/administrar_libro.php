@@ -73,7 +73,7 @@ $libro= new Libro();
 				}
 			}
 			
-		//enviarRespuesta($_POST['email'], $_POST['nombre']);
+		
 		$libro->setNombre($_POST['nombre']);
 		//$libro->setNombre($path);
 		$libro->setPrimerApellido($_POST['primerApellido']);
@@ -102,7 +102,11 @@ $libro= new Libro();
 		phpAlert("El formulario ha sido enviado de forma correcta. Gracias!");
 		exit();
 		*/
-		die( 'OK');
+		$respuesta = die( 'OK');
+		if($respuesta === 'OK'){
+			enviarRespuesta($_POST['email'], $_POST['nombre']);
+			die( 'OK');
+		}
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
 	}
 
