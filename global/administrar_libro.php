@@ -73,7 +73,7 @@ $libro= new Libro();
 				}
 			}
 			
-		enviarRespuesta($_POST['email'], $_POST['nombre']);
+		//enviarRespuesta($_POST['email'], $_POST['nombre']);
 		$libro->setNombre($_POST['nombre']);
 		//$libro->setNombre($path);
 		$libro->setPrimerApellido($_POST['primerApellido']);
