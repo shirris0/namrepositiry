@@ -106,9 +106,11 @@ $libro= new Libro();
 		if(enviarRespuesta($_POST['email'], $_POST['nombre']) === 1){
 			die( 'OK');		
 		}
+
+		die( 'OK');
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
 	}
-
+	die( 'OK');
 	function phpAlert($msg) {
 		echo '<script type="text/javascript">alert("' . $msg . '")</script>';
 	}
