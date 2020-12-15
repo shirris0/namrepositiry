@@ -46,6 +46,8 @@ function enviarRespuesta($email, $nombre){
     
     if(!$oMail->send()){
         echo $oMail->ErrorInfo;
+    }else{
+        return 1;
     }
 }
 
