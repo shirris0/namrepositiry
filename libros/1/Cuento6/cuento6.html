@@ -3,7 +3,7 @@
 <h3 style="text-align: center;">El infinito</h3>
 <br>
 
-<div>          
+<div>
     <audio controls id="audio">
     <source src="libros/1/Cuento6/audio.mp3" type="audio/mp3">
     Your browser does not support the audio element.
@@ -34,5 +34,6 @@
 <div class="col-sm-12 descargaAudiolibro">
     <a href="libros/1/Cuento6/audio.mp3" download="Audiolibro - El infinito">Descargar Audiolibro</a>
 </div>
-
-
+<div id="padre" onload="load()" class="padre">
+    <a onclick="mostrarRompecabezas(1,6)" href="#padre" id="hijo">Arma el rompecabezas</a>
+</div>
