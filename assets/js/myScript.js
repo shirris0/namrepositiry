@@ -227,7 +227,7 @@ $(document).ready(function() {
             } else if (cuento == 3) {
                 elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=395461425f0d&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
             } else if (cuento == 4) {
-                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=361640945f6d&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>')
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=361640945f6d&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
             } else if (cuento == 5) {
                 elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=3db59ccc6090&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
             } else if (cuento == 6) {
@@ -242,6 +242,54 @@ $(document).ready(function() {
                 elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=3a9c214ceddf&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
             } else if (cuento == 11) {
                 elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=1ae085bab033&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            }
+        } else if (libro == 2) {
+            if (cuento == 1) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=16daefc0db70&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 2) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=21e997f79968&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 3) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=29b2928a1072&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 4) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=1d61d8ade7a8&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 5) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=02a52dba2e3c&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 6) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=1ab009b875de&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 7) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=056c2610c168&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 8) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=120bd5215019&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 9) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=025db9a3092d&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 10) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=2520a1e30882&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 11) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=028dde4905ca&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            }
+        } else if (libro == 3) {
+            if (cuento == 1) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=3d3570b0fd79&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 2) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=0bf6f9fe3364&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 3) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=24f80b3a55a4&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 4) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=0c270b0de30e&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 5) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=3bec93cd26ed&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 6) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=347e7db43d1c&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 7) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=337ff61f6a3f&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 8) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=04840d96795b&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 9) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=14c3438382d3&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 10) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=0bd7e43c9593&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 11) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=2bb3c1480723&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
             }
         }
         padre.appendChild(elemento);
