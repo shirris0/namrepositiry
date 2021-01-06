@@ -3,6 +3,7 @@
 
 require("class.phpmailer.php");
 require("class.smtp.php");
+include_once 'contacto.php';
 
 
 // Valores enviados desde el formulario
@@ -105,6 +106,7 @@ $mail->SMTPOptions = array(
 $estadoEnvio = $mail->Send(); 
 
 if($estadoEnvio){
+    enviarRespuesta($_POST["email"], $_POST["name"]);
     die( 'OK');
 }else{
     die( 'Unable to load the "PHP Email Form" Library!');
