@@ -291,6 +291,78 @@ $(document).ready(function() {
             } else if (cuento == 11) {
                 elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=2bb3c1480723&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
             }
+        } else if (libro == 4) {
+            if (cuento == 1) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=1c5033877d8c&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe> ');
+            } else if (cuento == 2) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=03a42843917d&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 3) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=3d24440c9f72&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 4) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=2d92589d4fff&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 5) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=3d14fb146233&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 6) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=05653d7b7cf2&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 7) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=2ea2d7582d9d&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 8) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=16d3cef530fe&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 9) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=1102d0e7afe0&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 10) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=1e88bea04d01&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            } else if (cuento == 11) {
+                elemento.innerHTML = ('<iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=197159940233&amp;view=iframe" style="width:100%;height:600px" frameborder=0 allowfullscreen></iframe>');
+            }
+        } else if (libro == 5) {
+            if (cuento == 1) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 2) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 3) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 4) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 5) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 6) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 7) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 8) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 9) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 10) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 11) {
+                elemento.innerHTML = ('');
+            }
+        } else if (libro == 6) {
+            if (cuento == 1) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 2) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 3) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 4) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 5) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 6) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 7) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 8) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 9) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 10) {
+                elemento.innerHTML = ('');
+            } else if (cuento == 11) {
+                elemento.innerHTML = ('');
+            }
         }
         padre.appendChild(elemento);
     };
