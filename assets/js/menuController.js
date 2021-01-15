@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
     $("#main").load(host+"indexContent.html",function(){
         cargarCarousel();
-        $("#btnModal").click();
+        //$("#btnModal").click();
     });
     $("#bannerHome").show();
 
