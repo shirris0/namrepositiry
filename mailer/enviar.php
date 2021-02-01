@@ -27,7 +27,7 @@ $asunto = $_POST["subject"];
 $mensaje = $_POST["message"];
 
 
-$destinatario = "contacto@nammagicoymexicano.org";
+$destinatario = "contacto@defensoresdelanaturaleza.mx";
 
 //variables para los datos del archivo
 $nameFile = $_FILES['adjunto']['name'];
@@ -45,8 +45,8 @@ $file = chunk_split(base64_encode($file));
 
 // Datos de la cuenta de correo utilizada para enviar v�a SMTP
 $smtpHost = "mail.nammagicoymexicano.org";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "contacto@nammagicoymexicano.org";  // Mi cuenta de correo
-$smtpClave = "M7P?V+DVn!xv";  
+$smtpUsuario = "contacto@defensoresdelanaturaleza.mx";  // Mi cuenta de correo
+$smtpClave = "2?}O=vj!,UpZ";  
 
 
 

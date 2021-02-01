@@ -14,9 +14,9 @@ function enviarRespuesta($email, $nombre){
     $oMail->Port=587;
     $oMail->SMTPSecure="tls";
     $oMail->SMTPAuth=true;
-    $oMail->Username="contacto@nammagicoymexicano.org";
-    $oMail->Password="-byg%}lMoL6-";
-    $oMail->setFrom("contacto@nammagicoymexicano.org","Defensores de la Naturaleza");
+    $oMail->Username="contacto@defensoresdelanaturaleza.mx";
+    $oMail->Password="2?}O=vj!,UpZ";
+    $oMail->setFrom("contacto@defensoresdelanaturaleza.mx","Defensores de la Naturaleza");
     $oMail->addAddress($email,$nombre);
     $oMail->Subject="Gracias por comunicarte con Nosotros";
     $oMail->msgHTML("");
