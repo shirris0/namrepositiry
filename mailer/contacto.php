@@ -10,7 +10,7 @@ use PHPMailer\PHPMailer\Exception;
 function enviarRespuesta($email, $nombre){
     $oMail = new PHPMailer();
     $oMail->isSMTP();
-    $oMail->Host="mail.nammagicoymexicano.org";
+    $oMail->Host="mail.defensoresdelanaturaleza.mx";
     $oMail->Port=587;
     $oMail->SMTPSecure="tls";
     $oMail->SMTPAuth=true;
