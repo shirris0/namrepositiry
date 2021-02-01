@@ -28,7 +28,7 @@
                   <div class="email">
                     <i class="icofont-envelope"></i>
                     <h4>Email:</h4>
-                    <p>contacto@nammagicoymexicano.org</p>
+                    <p>contacto@defensoresdelanaturaleza.mx</p>
                   </div>
     
                   <div class="phone">
