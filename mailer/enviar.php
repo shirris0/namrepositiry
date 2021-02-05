@@ -46,7 +46,7 @@ $file = chunk_split(base64_encode($file));
 // Datos de la cuenta de correo utilizada para enviar v�a SMTP
 $smtpHost = "mail.defensoresdelanaturaleza.mx";  // Dominio alternativo brindado en el email de alta 
 $smtpUsuario = "contacto@defensoresdelanaturaleza.mx";  // Mi cuenta de correo
-$smtpClave = "2?}O=vj!,UpZ";  
+$smtpClave = "sahuarodigital2021";  
 
 
 

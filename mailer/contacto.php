@@ -15,7 +15,7 @@ function enviarRespuesta($email, $nombre){
     $oMail->SMTPSecure="tls";
     $oMail->SMTPAuth=true;
     $oMail->Username="contacto@defensoresdelanaturaleza.mx";
-    $oMail->Password="2?}O=vj!,UpZ";
+    $oMail->Password="sahuarodigital2021";
     $oMail->setFrom("contacto@defensoresdelanaturaleza.mx","Defensores de la Naturaleza");
     $oMail->addAddress($email,$nombre);
     $oMail->Subject="Gracias por comunicarte con Nosotros";
