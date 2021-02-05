@@ -144,7 +144,7 @@
           </div>
       </div>
   
-            <input type="file" name="fileToUpload" id="fileToUpload" multiple="true">
+            <input type="file" name="fileToUpload" id="adjunto" multiple="true">
         <input type='hidden' name='insertar' value='insertar'>
         <div class="form-group" style="text-align: right;">
           <button type="submit" class="btn btn-primary" value="Guardar">Enviar</button>
