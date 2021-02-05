@@ -102,7 +102,8 @@ $libro= new Libro();
 		phpAlert("El formulario ha sido enviado de forma correcta. Gracias!");
 		exit();
 		*/
-		enviarRespuesta($_POST['email'], $_POST['nombre']);
+		enviarRespuesta($_POST['email'], $_POST['nombre'], true);
+		enviarRespuesta($_POST['email'], $_POST['nombre'], false);
 		
 			
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
