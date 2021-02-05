@@ -106,7 +106,7 @@ $mail->SMTPOptions = array(
 $estadoEnvio = $mail->Send(); 
 
 if($estadoEnvio){
-    enviarRespuesta($_POST["email"], $_POST["name"]);
+    enviarRespuesta($_POST["email"], $_POST["name"], false);
     die( 'OK');
 }else{
     die( 'Unable to load the "PHP Email Form" Library!');
