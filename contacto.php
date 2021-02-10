@@ -1,4 +1,4 @@
-
+<?php include("keys/keys.php") ?>
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbsWhite" data-aos="fade-in">
         <div class="container">
@@ -70,6 +70,7 @@
                     <div class="sent-message">Su mensaje ha sido enviado. Gracias!</div>
                   </div>    
                   <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+                  <input type="hidden" name="token-google" id="token-google">
                 </form> 
   
               </div>
@@ -98,7 +99,14 @@
      <!--<script src="assets/js/contactoController.js"></script> -->
    
      <script>
-
+      //  Obtiene el token que proporciona google del reCaptcha con la llave publica
+       grecaptcha.ready(function() {
+          grecaptcha.execute('<?php echo SITE_KEY; ?>', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+              $('#token-google').val(token);
+              console.log(token);
+          });
+        });
       var serviceAPI = new ServiciosAPI();
       var formularioController = new  FormularioController();
 
