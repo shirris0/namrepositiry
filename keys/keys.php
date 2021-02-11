@@ -1,4 +1,4 @@
 <?php 
-    define('SITE_KEY','6LcF7U8aAAAAAK3wNKvXqo1_3FZ4hzOsDjxEiT75');
-    define('SECRETE_KEY','6LcF7U8aAAAAADvttvfoQGnz3dnYg15bxz-ZXzRp');
+    define('SITE_KEY','6LfBIVAaAAAAAE2E9j1Dgej8fk4rJumtRkg1vnUJ');
+    define('SECRETE_KEY','6LfBIVAaAAAAAETCR92truJqcBRZDvjNOlKAT_oz');
 ?>
