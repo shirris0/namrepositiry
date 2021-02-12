@@ -4,8 +4,14 @@ $(document).ready(function() {
 
 
 
-    showBook = function(libro, cuento) {
-        var url = host + "libros/" + libro + "/Cuento" + cuento + "/cuento" + cuento + ".html";
+    showBook = function(libro, cuento,idioma) {
+
+        if(idioma == "may"){
+            var url = host + "libros/" + libro + "_may/Cuento" + cuento + "/cuento" + cuento + ".html";
+        }else{
+            var url = host + "libros/" + libro + "/Cuento" + cuento + "/cuento" + cuento + ".html";
+        }
+        
         var bookName = "cuento" + cuento;
         $("#cuentoContainer").load(url, function() {
             var elemento = document.getElementById(bookName);
