@@ -16,7 +16,7 @@ function enviarRespuesta($email, $nombre, $reenvio){
         $oMail->SMTPSecure="tls";
         $oMail->SMTPAuth=true;
         $oMail->Username="contacto@defensoresdelanaturaleza.mx";
-        $oMail->Password="defensores2021.1.!";
+        $oMail->Password="defensores2021.1";
         $oMail->setFrom("contacto@defensoresdelanaturaleza.mx","Defensores de la Naturaleza");
         if($reenvio == true){
             $oMail->addAddress($email,$nombre);
@@ -38,6 +38,7 @@ function enviarRespuesta($email, $nombre, $reenvio){
                 
                 ";
         }else{
+            /*
             $oMail->addAddress("iriswilsonr@gmail.com");
             $oMail->Subject = "Contacto Proceso Nacional de Reconciliación con la Naturaleza"; // Este es el titulo del email.
             $oMail->msgHTML("Hallazgos. Un usuario se contacto con nosotros.");
@@ -62,6 +63,7 @@ function enviarRespuesta($email, $nombre, $reenvio){
 
             <br />
             "; 
+            */
         }
         
 
