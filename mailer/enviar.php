@@ -32,7 +32,7 @@ if(!validarToken($_POST['token-google'])){
         // Datos de la cuenta de correo utilizada para enviar v�a SMTP
         $smtpHost = "mail.defensoresdelanaturaleza.mx";  // Dominio alternativo brindado en el email de alta 
         $smtpUsuario = "contacto@defensoresdelanaturaleza.mx";  // Mi cuenta de correo
-        $smtpClave = "defensores2021.1.estanoes";  
+        $smtpClave = "defensores2021.1";  
         $mail = new PHPMailer();
         $mail->IsSMTP();
         $mail->SMTPAuth = true;

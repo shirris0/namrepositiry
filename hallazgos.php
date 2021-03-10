@@ -1,4 +1,5 @@
- <!-- ======= Breadcrumbs ======= -->
+<?php include("keys/keys.php") ?>
+<!-- ======= Breadcrumbs ======= -->
  <div class="breadcrumbsWhite" data-aos="fade-in">
         <div class="container">
           
@@ -148,6 +149,7 @@
         <input type='hidden' name='insertar' value='insertar'>
         <div class="form-group" style="text-align: right;">
           <button type="submit" class="btn btn-primary" value="Guardar">Enviar</button>
+          <input type="hidden" name="token-google" id="token-google">
         </div>
         <div class="mb-3">
           <div class="sent-message" style="display: none;">Su mensaje ha sido enviado. Gracias!</div>
@@ -175,6 +177,13 @@
    
      <script>
 
+          grecaptcha.ready(function() {
+            grecaptcha.execute('<?php echo SITE_KEY; ?>', {action: 'submit'}).then(function(token) {
+                // Add your logic to submit to your backend server here.
+                $('#token-google').val(token);
+                console.log(token);
+            });
+          });
       var serviceAPI = new ServiciosAPI();
       var formularioController = new  FormularioController();
 

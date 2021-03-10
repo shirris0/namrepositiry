@@ -38,7 +38,7 @@ function enviarRespuesta($email, $nombre, $reenvio){
                 
                 ";
         }else{
-            /*
+            
             $oMail->addAddress("iriswilsonr@gmail.com");
             $oMail->Subject = "Contacto Proceso Nacional de Reconciliación con la Naturaleza"; // Este es el titulo del email.
             $oMail->msgHTML("Hallazgos. Un usuario se contacto con nosotros.");
@@ -63,7 +63,7 @@ function enviarRespuesta($email, $nombre, $reenvio){
 
             <br />
             "; 
-            */
+            
         }
         
 

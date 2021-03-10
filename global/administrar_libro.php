@@ -3,10 +3,14 @@
 require_once('crud_libro.php');
 require_once('libro.php');
 include_once '../mailer/contacto.php';
+include('../hallazgos.php');
 
 $crud= new CrudLibro();
 $libro= new Libro();
 	
+if(!validarToken($_POST['token-google'])){
+	die('Eres un Robot');
+}else{
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
 	if (isset($_POST['insertar'])) {
 		$target_dir =  "/home/nammagic/defensoresdelanaturaleza.mx/repositorioArchivos/";//getcwd();
@@ -109,6 +113,7 @@ $libro= new Libro();
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
 	}
 	die( 'OK');
+}
 	function phpAlert($msg) {
 		echo '<script type="text/javascript">alert("' . $msg . '")</script>';
 	}
