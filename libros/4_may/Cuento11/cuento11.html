@@ -1,0 +1,53 @@
+<h3 style="color: white;">Texto</h3>
+<div class="row"></div>
+<h3 style="text-align: center;">La grandeza</h3>
+<br>
+<div>
+    <audio controls id="audio">
+    <source src="libros/4/Cuento11/audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+    </audio>
+</div>
+
+<br>
+<div>
+    <button onclick="showBook('4','11')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_es.png">
+    </button>
+    <button onclick="showBook('4','11','may')" id="btn_may" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_may.png">
+    </button>
+</div>
+<br>
+<div id="cuento11" class="book" data-aos="fade-up">
+    <div><img src="libros/4_may/Cuento1/portada.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/1.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/2.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/3.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/4.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/5.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/6.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/7.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/8.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/9.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/10.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/11.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/12.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/13.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/14.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/15.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/16.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/17.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/18.jpg"></div>
+    <div><img src="libros/4_may/Cuento11/19.jpg"></div>
+</div>
+<!--
+<div class="col-sm-12 descargaAudiolibro">
+    <a href="libros/1/Cuento1/audio.mp3" download="Audiolibro - México, un lugar en el Ombligo de la Luna">Descargar Audiolibro</a>
+</div>
+-->
+<div id="padre" onload="load()" class="padre">
+    <button onclick="mostrarRompecabezas(4,11)" id="hijo" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/btnarmaelRompecabezas.png">
+    </button>
+</div>
