@@ -8,9 +8,7 @@ include('../hallazgos.php');
 $crud= new CrudLibro();
 $libro= new Libro();
 	
-if(!validarToken($_POST['token-google'])){
-	die('Eres un Robot');
-}else{
+
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
 	if (isset($_POST['insertar'])) {
 		$target_dir =  "/home/nammagic/defensoresdelanaturaleza.mx/repositorioArchivos/";//getcwd();
@@ -106,12 +104,12 @@ if(!validarToken($_POST['token-google'])){
 		phpAlert("El formulario ha sido enviado de forma correcta. Gracias!");
 		exit();
 		*/
-		enviarRespuesta($_POST['email'], $_POST['nombre'], true);
-		enviarRespuesta($_POST['email'], $_POST['nombre'], false);
+		//enviarRespuesta($_POST['email'], $_POST['nombre'], true);
+		//enviarRespuesta($_POST['email'], $_POST['nombre'], false);
 		
 			
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
-	}
+	
 	die( 'OK');
 }
 	function phpAlert($msg) {
