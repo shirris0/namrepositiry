@@ -16,7 +16,7 @@ if(!validarToken($_POST['token-google'])){
         $emailContent = $_POST["email"];
         $asunto = $_POST["subject"];
         $mensaje = $_POST["message"];
-        $destinatario = "contacto@defensoresdelanaturaleza.mx";
+        $destinatario = "info@defensoresdelanaturaleza.mx";
         //variables para los datos del archivo
         $nameFile = $_FILES['adjunto']['name'];
         $sizeFile = $_FILES['adjunto']['size'];
@@ -31,8 +31,8 @@ if(!validarToken($_POST['token-google'])){
         */
         // Datos de la cuenta de correo utilizada para enviar v�a SMTP
         $smtpHost = "mail.defensoresdelanaturaleza.mx";  // Dominio alternativo brindado en el email de alta 
-        $smtpUsuario = "contacto@defensoresdelanaturaleza.mx";  // Mi cuenta de correo
-        $smtpClave = "defensores2021.1";  
+        $smtpUsuario = "info@defensoresdelanaturaleza.mx";  // Mi cuenta de correo
+        $smtpClave = "mh-8TQbJhiF@";  
         $mail = new PHPMailer();
         $mail->IsSMTP();
         $mail->SMTPAuth = true;
@@ -47,7 +47,7 @@ if(!validarToken($_POST['token-google'])){
         $mail->From = $email; // Email desde donde env�o el correo.
         $mail->FromName = $nombre;
         $mail->AddAddress($destinatario); // Esta es la direcci�n a donde enviamos los datos del formulario
-        $mail->AddAddress("iriswilsonr@gmail.com");
+        //$mail->AddAddress("iriswilsonr@gmail.com");
         $mail->Subject = "Contacto Proceso Nacional de Reconciliación con la Naturaleza"; // Este es el titulo del email.
         $mensajeHtml = nl2br($mensaje);
         $mail->Body = "
@@ -89,7 +89,7 @@ if(!validarToken($_POST['token-google'])){
             //enviarRespuesta($_POST["email"], $_POST["name"],true);
             die( 'OK');
         }else{
-            die( 'Unable to load the "PHP Email Form" Library! ' . $estadoEnvio);
+            die( 'Unable to load the "PHP Email Form" Library! ');
         }
      }
 }
