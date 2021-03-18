@@ -86,12 +86,12 @@ if(!validarToken($_POST['token-google'])){
         $estadoEnvio = $mail->Send(); 
 
         if($estadoEnvio){
-            enviarRespuesta($_POST["email"], $_POST["name"],true);
+            //enviarRespuesta($_POST["email"], $_POST["name"],true);
             die( 'OK');
         }else{
             die( 'Unable to load the "PHP Email Form" Library!');
         }
-            }
+     }
 }
 
 
