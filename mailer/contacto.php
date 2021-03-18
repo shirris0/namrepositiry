@@ -78,7 +78,7 @@ function enviarRespuesta($email, $nombre, $reenvio){
         if(!$oMail->send()){
             echo $oMail->ErrorInfo;
         }else{
-            return 1;
+            die(' OK');
         }
     
     
