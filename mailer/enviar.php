@@ -89,7 +89,7 @@ if(!validarToken($_POST['token-google'])){
             //enviarRespuesta($_POST["email"], $_POST["name"],true);
             die( 'OK');
         }else{
-            die( 'Unable to load the "PHP Email Form" Library!');
+            die( 'Unable to load the "PHP Email Form" Library! ' . $estadoEnvio);
         }
      }
 }
