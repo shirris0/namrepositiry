@@ -110,8 +110,9 @@ $libro= new Libro();
 			
 	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
 	
+	
+	}
 	die( 'OK');
-}
 	function phpAlert($msg) {
 		echo '<script type="text/javascript">alert("' . $msg . '")</script>';
 	}
