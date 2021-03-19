@@ -105,16 +105,14 @@ $libro= new Libro();
 		exit();
 		*/
 		if(enviarRespuesta($_POST['email'], $_POST['nombre'], true)){
-			header('Location: https://defensoresdelanaturaleza.mx/',true);
+			die( 'OK');
 		}
 		//enviarRespuesta($_POST['email'], $_POST['nombre'], false);
 		
 			
-	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro
-	
-	
+	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro	
 	}
-	die( 'OK');
+	
 	function phpAlert($msg) {
 		echo '<script type="text/javascript">alert("' . $msg . '")</script>';
 	}
