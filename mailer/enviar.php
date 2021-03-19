@@ -1,6 +1,4 @@
 <?php
-
-
 require("class.phpmailer.php");
 require("class.smtp.php");
 include_once 'contacto.php';
@@ -52,29 +50,18 @@ if(!validarToken($_POST['token-google'])){
         $mensajeHtml = nl2br($mensaje);
         $mail->Body = "
         <html> 
-
         <body> 
-
         <h1>Recibiste un nuevo mensaje desde la Plataforma del Proceso Nacional de Reconciliación con la Naturaleza</h1>
-
         <p>Informacion enviada por el usuario de la web:</p>
-
         <p>Nombre: {$nombre}</p>
-
         <p>Email: {$emailContent}</p>
-
         <p>Asunto: {$asunto}</p>
-
         <p>Mensaje: {$mensaje}</p>
-
         </body> 
-
         </html>
-
         <br />"; // Texto del email en formato HTML
         $mail->AltBody = "{$mensaje} \n\n "; // Texto sin formato HTML
         // FIN - VALORES A MODIFICAR //
-
         $mail->SMTPOptions = array(
             'ssl' => array(
                 'verify_peer' => false,
@@ -82,9 +69,7 @@ if(!validarToken($_POST['token-google'])){
                 'allow_self_signed' => true
             )
         );
-
         $estadoEnvio = $mail->Send(); 
-
         if($estadoEnvio){
             enviarRespuesta($_POST["email"], $_POST["name"],true);
             die( 'OK');
