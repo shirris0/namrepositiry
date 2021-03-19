@@ -104,7 +104,9 @@ $libro= new Libro();
 		phpAlert("El formulario ha sido enviado de forma correcta. Gracias!");
 		exit();
 		*/
-		enviarRespuesta($_POST['email'], $_POST['nombre'], true);
+		if(enviarRespuesta($_POST['email'], $_POST['nombre'], true)){
+			header('Location: https://defensoresdelanaturaleza.mx/',true);
+		}
 		//enviarRespuesta($_POST['email'], $_POST['nombre'], false);
 		
 			
