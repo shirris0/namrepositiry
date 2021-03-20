@@ -167,7 +167,7 @@ form.submit(function(event){
     type: "POST",
     data: $(this).serialize(),
     beforeSend: function(){
-      form.fin('.loading').slideDown();
+      form.find('.loading').slideDown();
     }
   }).done(function(res){
     if(res){
