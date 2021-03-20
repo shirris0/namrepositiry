@@ -13,7 +13,7 @@ function enviarRespuesta($email, $nombre, $reenvio){
         $oMail->SMTPSecure="tls";
         $oMail->SMTPAuth=true;
         $oMail->Username="info@defensoresdelanaturaleza.mx";
-        $oMail->Password="mh-8TQbJhiF@";
+        $oMail->Password='$jLhVcBPPDOa';
         $oMail->setFrom("info@defensoresdelanaturaleza.mx","Defensores de la Naturaleza");
         if($reenvio == true){
             $oMail->addAddress($email,$nombre);
