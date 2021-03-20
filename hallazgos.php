@@ -8,7 +8,7 @@
 <div class="col-lg-12 bannerSecundario" style="text-align: center;">
         <img src="assets/img/bannerContacto.jpg">
 </div>
-<form  action='global/administrar_libro.php' method='post' class="php-email-form" enctype="multipart/form-data" id="formulario">
+<form  action='global/administrar_libro.php' method='post' class="" enctype="multipart/form-data" id="formulario">
   <div class="container" data-aos="fade-up">
     <div class="row mt-5" style="margin-bottom: 25px;">
       <div  class="col-sm-6">        
@@ -134,6 +134,8 @@
             <input type="hidden" name="token-google" id="token-google">
           </div>
           <div class="mb-3">
+            <div class="loading" style="display: none; text-align: center">Loading</div>
+            <div class="error-message" style="display: none;">Ah ocurrido algun error !!!</div>
             <div class="sent-message" style="display: none;">Su mensaje ha sido enviado. Gracias!</div>
           </div> 
       </div> 
@@ -156,19 +158,29 @@
       <script src="assets/vendor/php-email-form/validate.js"></script>
      <!--<script src="assets/js/contactoController.js"></script> -->
    
-     <script>
-
-          grecaptcha.ready(function() {
-            grecaptcha.execute('<?php echo SITE_KEY; ?>', {action: 'submit'}).then(function(token) {
-                // Add your logic to submit to your backend server here.
-                $('#token-google').val(token);
-                console.log(token);
-            });
-          });
-      var serviceAPI = new ServiciosAPI();
-      var formularioController = new  FormularioController();
-
-      serviceAPI.getEntidadesSEPOMEX();
-     
-
-     </script>
+<script>
+var form = $('#formulario');
+form.submit(function(event){
+  event.preventDefault();
+  $.ajax({
+    url: $(this).attr('action'),
+    type: "POST",
+    data: $(this).serialize(),
+    beforeSend: function(){
+      form.fin('.loading').slideDown();
+    }
+  }).done(function(res){
+    if(res){
+      form.find('.loading').slideUp();
+      form.find('.sent-message').slideDown();
+      $('#formulario').trigger("reset");
+    }
+  }).fail(function(){
+    form.find('.sent-message').slideUp();
+    form.find('.error-message').slideDown();
+  });
+});
+ var serviceAPI = new ServiciosAPI();
+ var formularioController = new  FormularioController();
+ serviceAPI.getEntidadesSEPOMEX();
+</script>

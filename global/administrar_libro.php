@@ -3,12 +3,8 @@
 require_once('crud_libro.php');
 require_once('libro.php');
 include_once '../mailer/contacto.php';
-include('../hallazgos.php');
-
 $crud= new CrudLibro();
-$libro= new Libro();
-	
-
+$libro= new Libro();	
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
 	if (isset($_POST['insertar'])) {
 		$target_dir =  "/home/nammagic/defensoresdelanaturaleza.mx/repositorioArchivos/";//getcwd();
@@ -96,21 +92,10 @@ $libro= new Libro();
 		$libro->setMascincuenta($_POST['mas50']);
 		//$libro->setEvidenciaPrivada($_POST['evidenciaPrivada']);
 		$libro->setIdArchivo($file_name);
-		//llama a la función insertar definida en el crud
 		$crud->insertar($libro);
-		
-		/*
-		header('Location: https://defensoresdelanaturaleza.mx/',true);
-		phpAlert("El formulario ha sido enviado de forma correcta. Gracias!");
-		exit();
-		*/
 		if(enviarRespuesta($_POST['email'], $_POST['nombre'], true)){
-			die( 'OK');
-		}
-		//enviarRespuesta($_POST['email'], $_POST['nombre'], false);
-		
-			
-	// si el elemento de la vista con nombre actualizar no viene nulo, llama al crud y actualiza el libro	
+			return true;
+		}	
 	}
 	
 	function phpAlert($msg) {
