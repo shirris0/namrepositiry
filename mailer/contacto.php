@@ -8,12 +8,15 @@ use PHPMailer\PHPMailer\Exception;
 function enviarRespuesta($email, $nombre, $reenvio){
         $oMail = new PHPMailer();
         $oMail->isSMTP();
-        $oMail->Host="mail.defensoresdelanaturaleza.mx";
+        //$oMail->Host="mail.defensoresdelanaturaleza.mx";
+        $oMail->Host="smtp.gmail.com";
         $oMail->Port=587;
         $oMail->SMTPSecure="tls";
         $oMail->SMTPAuth=true;
-        $oMail->Username="info@defensoresdelanaturaleza.mx";
-        $oMail->Password='$jLhVcBPPDOa';
+        //$oMail->Username="info@defensoresdelanaturaleza.mx";
+        $oMail->Username="rleyvacastro@gmail.com";
+        //$oMail->Password='$jLhVcBPPDOa';
+        $oMail->Password="tyrant-003";
         $oMail->setFrom("info@defensoresdelanaturaleza.mx","Defensores de la Naturaleza");
         if($reenvio == true){
             $oMail->addAddress($email,$nombre);

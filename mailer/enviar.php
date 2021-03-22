@@ -28,9 +28,12 @@ if(!validarToken($_POST['token-google'])){
         $file = chunk_split(base64_encode($file));
         */
         // Datos de la cuenta de correo utilizada para enviar v�a SMTP
-        $smtpHost = "mail.defensoresdelanaturaleza.mx";  // Dominio alternativo brindado en el email de alta 
-        $smtpUsuario = "info@defensoresdelanaturaleza.mx";  // Mi cuenta de correo
-        $smtpClave = '$jLhVcBPPDOa';  
+        //$smtpHost = "mail.defensoresdelanaturaleza.mx";  // Dominio alternativo brindado en el email de alta 
+        $smtpHost="smtp.gmail.com";
+        //$smtpUsuario = "info@defensoresdelanaturaleza.mx";  // Mi cuenta de correo
+        $smtpUsuario = "rleyvacastro@gmail.com";
+        //$smtpClave = '$jLhVcBPPDOa';  
+        $smtpClave = "tyrant-003";
         $mail = new PHPMailer();
         $mail->IsSMTP();
         $mail->SMTPAuth = true;
