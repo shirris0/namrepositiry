@@ -8,8 +8,8 @@ use PHPMailer\PHPMailer\Exception;
 function enviarRespuesta($email, $nombre, $reenvio){
         $oMail = new PHPMailer();
         $oMail->isSMTP();
-        //$oMail->Host="mail.defensoresdelanaturaleza.mx";
-        $oMail->Host="smtp.gmail.com";
+        $oMail->Host="mail.defensoresdelanaturaleza.mx";
+        //$oMail->Host="smtp.gmail.com";
         $oMail->Port=587;
         $oMail->SMTPSecure="tls";
         $oMail->SMTPAuth=true;
