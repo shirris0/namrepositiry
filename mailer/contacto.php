@@ -15,7 +15,7 @@ function enviarRespuesta($email, $nombre, $reenvio){
         $oMail->SMTPAuth=true;
         $oMail->Username="info@defensoresdelanaturaleza.mx";
         //$oMail->Username="rleyvacastro@gmail.com";
-        $oMail->Password='As5drq9zv7391,';
+        $oMail->Password='tyrant-002';
         //$oMail->Password="tyrant-003";
         $oMail->setFrom("info@defensoresdelanaturaleza.mx","Defensores de la Naturaleza");
         if($reenvio == true){
