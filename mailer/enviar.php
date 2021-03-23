@@ -32,7 +32,7 @@ if(!validarToken($_POST['token-google'])){
         //$smtpHost="smtp.gmail.com";
         $smtpUsuario = "info@defensoresdelanaturaleza.mx";  // Mi cuenta de correo
         //$smtpUsuario = "rleyvacastro@gmail.com";
-        $smtpClave = 'tyrant-002';  
+        $smtpClave = '_y(a{;M-rH5{';  
         //$smtpClave = "tyrant-003";
         $mail = new PHPMailer();
         $mail->IsSMTP();
