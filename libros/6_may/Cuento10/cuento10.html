@@ -1,0 +1,48 @@
+<h3 style="color: white;">Texto</h3>
+<div class="row"></div>
+<h3 style="text-align: center;">¡De México al mundo!</h3>
+<br>
+<div>
+    <audio controls id="audio">
+    <source src="libros/6/Cuento10/audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+    </audio>
+</div>
+<br>
+<div>
+    <button onclick="showBook('6','10')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_es.png">
+    </button>
+    <button onclick="showBook('6','10','may')" id="btn_may" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_may.png">
+    </button>
+</div>
+<br>
+<div id="cuento10" class="book" data-aos="fade-up">
+    <div><img src="libros/6_may/Cuento1/portada.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/1.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/2.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/3.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/4.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/5.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/6.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/7.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/8.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/9.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/10.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/11.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/12.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/13.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/14.jpg"></div>
+    <div><img src="libros/6_may/Cuento10/15.jpg"></div>
+
+
+</div>
+<div class="col-sm-12 descargaAudiolibro">
+    <a href="libros/6/Cuento10/audio.mp3" download="Audiolibro - ¡De México al mundo!">Descargar Audiolibro</a>
+</div>
+<div id="padre" onload="load()" class="padre">
+    <button onclick="mostrarRompecabezas(6,10)" id="hijo" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/btnarmaelRompecabezas.png">
+    </button>
+</div>
