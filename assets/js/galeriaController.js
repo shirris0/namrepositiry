@@ -110,17 +110,17 @@ cargarGaleriaTerritorio = function(carpeta) {
             break;
     }
 
-    var cont = 0;
+    var cont = 1;
     var str = "";
     var str2 = "";
     while (cont <= noIlustraciones) {
         console.log(nomCarpeta);
-        if (cont == 0) {
+        if (cont == 1) {
             str = str.concat("<div class='carousel-item active'><img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg'></div>");
-            str2 = str2.concat("<li data-target='#carrusel' data-slide-to='" + cont + "' class='active'> <img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg' class='img-fluid'></li>");
+            str2 = str2.concat("<li data-target='#carrusel' data-slide-to='" + cont - 1 + "' class='active'> <img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg' class='img-fluid'></li>");
         } else {
             str = str.concat("<div class='carousel-item'><img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg' ></div>");
-            str2 = str2.concat("<li data-target='#carrusel' data-slide-to='" + cont + "'><img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg' class='img-fluid'></li>");
+            str2 = str2.concat("<li data-target='#carrusel' data-slide-to='" + cont - 1 + "'><img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg' class='img-fluid'></li>");
         }
 
         cont++;
