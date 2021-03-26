@@ -110,12 +110,12 @@ cargarGaleriaTerritorio = function(carpeta) {
             break;
     }
 
-    var cont = 1;
+    var cont = 0;
     var str = "";
     var str2 = "";
     while (cont <= noIlustraciones) {
         console.log(nomCarpeta);
-        if (cont == 1) {
+        if (cont == 0) {
             str = str.concat("<div class='carousel-item active'><img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg'></div>");
             str2 = str2.concat("<li data-target='#carrusel' data-slide-to='" + cont + "' class='active'> <img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg' class='img-fluid'></li>");
         } else {
