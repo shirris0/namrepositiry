@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
     cargarGaleria(1);
     cargarGaleriaTerritorio(1);
@@ -20,8 +20,8 @@ var noLibro5 = 20;
 var noLibro6 = 20;
 
 
-cargarGaleria = function(libro){
-    
+cargarGaleria = function(libro) {
+
     //Limpieza
     $("#idCarouselGaleria").empty();
     $("#idOLGaleria").empty();
@@ -29,55 +29,55 @@ cargarGaleria = function(libro){
 
     var noIlustraciones;
 
-    switch(libro){
-        case 1: 
+    switch (libro) {
+        case 1:
             noIlustraciones = noLibro1;
-        break;
+            break;
         case 2:
             noIlustraciones = noLibro2;
-        break;
+            break;
         case 3:
             noIlustraciones = noLibro3;
-        break;
+            break;
         case 4:
             noIlustraciones = noLibro4;
-        break;
+            break;
         case 5:
             noIlustraciones = noLibro5;
-        break;
+            break;
         case 6:
             noIlustraciones = noLibro6;
-        break;
+            break;
     }
 
     var cont = 1;
     var str = "";
     var str2 = "";
-    while (cont <= noIlustraciones){
+    while (cont <= noIlustraciones) {
 
-        if(cont == 1 ){
-            str =  str.concat("<div class='carousel-item active'><img class='d-block w-100' src='libros/"+libro+"/Ilustraciones/"+cont+".jpg'></div>");
-            str2 = str2.concat("<li data-target='#carousel-thumb' data-slide-to='"+cont+"' class='active'> <img class='d-block w-100' src='libros/"+libro+"/Ilustraciones/"+cont+".jpg' class='img-fluid'></li>");
-        }else{
-            str =  str.concat("<div class='carousel-item'><img class='d-block w-100' src='libros/"+libro+"/Ilustraciones/"+cont+".jpg' ></div>");
-            str2 = str2.concat("<li data-target='#carousel-thumb' data-slide-to='"+cont+"'><img class='d-block w-100' src='libros/"+libro+"/Ilustraciones/"+cont+".jpg' class='img-fluid'></li>");
+        if (cont == 1) {
+            str = str.concat("<div class='carousel-item active'><img class='d-block w-100' src='libros/" + libro + "/Ilustraciones/" + cont + ".jpg'></div>");
+            str2 = str2.concat("<li data-target='#carousel-thumb' data-slide-to='" + cont + "' class='active'> <img class='d-block w-100' src='libros/" + libro + "/Ilustraciones/" + cont + ".jpg' class='img-fluid'></li>");
+        } else {
+            str = str.concat("<div class='carousel-item'><img class='d-block w-100' src='libros/" + libro + "/Ilustraciones/" + cont + ".jpg' ></div>");
+            str2 = str2.concat("<li data-target='#carousel-thumb' data-slide-to='" + cont + "'><img class='d-block w-100' src='libros/" + libro + "/Ilustraciones/" + cont + ".jpg' class='img-fluid'></li>");
         }
-    
+
         cont++;
-        
+
     }
 
     $("#idCarouselGaleria").append(str);
     $("#idOLGaleria").append(str2);
 
-    $("#idCarouselGaleria").parent().append(" <div class='btnDescargaContainer' style='text-align: center; margin-left: 0;'><button onclick='descargarIlustraciones("+libro+")'><img src='assets/img/btnDescarga.png' ></button></div>");
-    
+    $("#idCarouselGaleria").parent().append(" <div class='btnDescargaContainer' style='text-align: center; margin-left: 0;'><button onclick='descargarIlustraciones(" + libro + ")'><img src='assets/img/btnDescarga.png' ></button></div>");
+
 
 }
 
-cargarGaleriaTerritorio = function(carpeta){
-    
-    
+cargarGaleriaTerritorio = function(carpeta) {
+
+
     //Limpieza
     $("#idCarouselGaleriaTerritorio").empty();
     $("#idOLGaleriaTerritorio").empty();
@@ -86,45 +86,45 @@ cargarGaleriaTerritorio = function(carpeta){
     var noIlustraciones;
     var nomCarpeta;
 
-    switch(carpeta){
-        case 1: 
+    switch (carpeta) {
+        case 1:
             noIlustraciones = 30;
             nomCarpeta = "Capoluca";
-        break;
+            break;
         case 2:
             noIlustraciones = 23;
             nomCarpeta = "Ixhuapan";
-        break;
+            break;
         case 3:
             noIlustraciones = 28;
             nomCarpeta = "Xpujil";
-        break;
+            break;
         case 4:
             noIlustraciones = noLibro4;
-        break;
+            break;
         case 5:
             noIlustraciones = noLibro5;
-        break;
+            break;
         case 6:
             noIlustraciones = noLibro6;
-        break;
+            break;
     }
 
     var cont = 1;
     var str = "";
     var str2 = "";
-    while (cont <= noIlustraciones){
+    while (cont <= noIlustraciones) {
         console.log(nomCarpeta);
-        if(cont == 1 ){
-            str =  str.concat("<div class='carousel-item active'><img class='d-block w-100' src='assets/img/galeriaTerritorio/"+nomCarpeta+"/"+cont+".jpg'></div>");
-            str2 = str2.concat("<li data-target='#carousel-thumb' data-slide-to='"+cont+"' class='active'> <img class='d-block w-100' src='assets/img/galeriaTerritorio/"+nomCarpeta+"/"+cont+".jpg' class='img-fluid'></li>");
-        }else{
-            str =  str.concat("<div class='carousel-item'><img class='d-block w-100' src='assets/img/galeriaTerritorio/"+nomCarpeta+"/"+cont+".jpg' ></div>");
-            str2 = str2.concat("<li data-target='#carousel-thumb' data-slide-to='"+cont+"'><img class='d-block w-100' src='assets/img/galeriaTerritorio/"+nomCarpeta+"/"+cont+".jpg' class='img-fluid'></li>");
+        if (cont == 1) {
+            str = str.concat("<div class='carousel-item active'><img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg'></div>");
+            str2 = str2.concat("<li data-target='#carrusel' data-slide-to='" + cont + "' class='active'> <img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg' class='img-fluid'></li>");
+        } else {
+            str = str.concat("<div class='carousel-item'><img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg' ></div>");
+            str2 = str2.concat("<li data-target='#carrusel' data-slide-to='" + cont + "'><img class='d-block w-100' src='assets/img/galeriaTerritorio/" + nomCarpeta + "/" + cont + ".jpg' class='img-fluid'></li>");
         }
-    
+
         cont++;
-        
+
     }
 
     console.log(str);
@@ -133,6 +133,6 @@ cargarGaleriaTerritorio = function(carpeta){
     $("#idOLGaleriaTerritorio").append(str2);
 
     //$("#idCarouselGaleria").parent().append(" <div class='btnDescargaContainerTerritorio' style='text-align: center; margin-left: 0;'><button onclick='descargarIlustraciones("+libro+")'><img src='assets/img/btnDescarga.png' ></button></div>");
-    
+
 
 }
