@@ -2265,3 +2265,9 @@ html {
 .imgarmaRompecabezas {
     width: 50%;
 }
+
+.btnLenguaje{
+    border: none;
+    background: transparent;
+    padding: 0;
+}

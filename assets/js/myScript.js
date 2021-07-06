@@ -65,9 +65,21 @@ $(document).ready(function() {
         req.send();
     }
 
+    setVarLibro = function(libro){
+        this.libro = libro;
+    }
 
-    descargarLibro = function(libro) {
-        var url = host + "libros/" + libro + "/libro.pdf";
+    descargarLibro = function(lengua) {
+        var url = "";
+        var noLibro = this.libro;
+    
+        if(lengua == "esp"){
+            url = host + "libros/" + this.libro + "/libro.pdf";
+        }else{
+            url = host + "libros/" + this.libro+lengua + "/libro.pdf";
+        }
+
+        
         //window.open(url);
         var req = new XMLHttpRequest();
         req.open("GET", url, true);
@@ -78,11 +90,12 @@ $(document).ready(function() {
             console.log(blob.size);
             var link = document.createElement('a');
             link.href = window.URL.createObjectURL(blob);
-            link.download = "Libro_" + libro + ".pdf";
+           link.download = "Libro_" +  noLibro + "_" + lengua + ".pdf";
             link.click();
         };
 
         req.send();
+        
     }
 
     descargarAudio = function(url, name) {
