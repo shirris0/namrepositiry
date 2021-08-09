@@ -22,7 +22,7 @@
                   <div class="address">
                     <i class="icofont-google-map"></i>
                     <h4>Dirección:</h4>
-                    <p>Av. Paseo de la Reforma, Ciudad de México.</p>
+                    <p>Calle Allende No. 637,  Colonia Centro, Morelia, Michoacán. CP 58000.</p>
                   </div>
     
                   <div class="email">
@@ -80,7 +80,8 @@
     
             <div data-aos="fade-up" style="align-items: center;">
           
-              <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.3308153496569!2d-99.16869369184816!3d19.42702059672184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1592713341035!5m2!1ses-419!2smx"  frameborder="0" allowfullscreen></iframe>
+              <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.250163255785!2d-101.1974903362039!3d19.70197080597051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e7af6197139%3A0x9c871d65b1132550!2sAllende%20637%2C%20Centro%20hist%C3%B3rico%20de%20Morelia%2C%2058000%20Morelia%2C%20Mich.!5e0!3m2!1sen!2smx!4v1628521483632!5m2!1sen!2smx"  frameborder="0" allowfullscreen></iframe>
+                
             </div>
     
           </div>
