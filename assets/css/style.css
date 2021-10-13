@@ -2271,3 +2271,8 @@ html {
     background: transparent;
     padding: 0;
 }
+
+.scrollable{
+    height: 700px; /* or any value */
+    overflow-y: auto;
+}
