@@ -1,0 +1,53 @@
+<h3 style="color: white;">Texto</h3>
+<div class="row"></div>
+<h3 style="text-align: center;">Los venenos ocultos</h3>
+<br>
+<div>
+    <audio controls id="audio">
+    <source src="libros/2_yaq/Cuento2/audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+    </audio>
+</div>
+
+<br>
+<div>
+    <button onclick="showBook('2','2')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_es.png">
+    </button>
+    <button onclick="showBook('2','2','may')" id="btn_may" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_may.png">
+    </button>
+    <button onclick="showBook('2','2','yaq')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_yaq.png">
+    </button>
+    <button onclick="showBook('2','2','nah')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_nah.png">
+    </button>
+</div>
+<br>
+<div id="cuento2" class="book" data-aos="fade-up">
+    <div><img src="libros/2_yaq/Cuento1/portada.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/1.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/2.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/3.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/4.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/5.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/6.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/7.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/8.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/9.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/10.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/11.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/12.jpg"></div>
+    <div><img src="libros/2_yaq/Cuento2/13.jpg"></div>
+</div>
+<!--
+<div class="col-sm-12 descargaAudiolibro">
+    <a href="libros/1/Cuento1/audio.mp3" download="Audiolibro - México, un lugar en el Ombligo de la Luna">Descargar Audiolibro</a>
+</div>
+-->
+<div id="padre" onload="load()" class="padre">
+    <button onclick="mostrarRompecabezas(2,2)" id="hijo" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/btnarmaelRompecabezas.png">
+    </button>
+</div>

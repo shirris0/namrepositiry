@@ -1,0 +1,56 @@
+<h3 style="color: white;">Texto</h3>
+<div class="row"></div>
+<h3 style="text-align: center;">La huella</h3>
+<br>
+<div>
+    <audio controls id="audio">
+    <source src="libros/1_yaq/Cuento8/audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+    </audio>
+</div>
+<br>
+<div>
+    <button onclick="showBook('1','8')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_es.png">
+    </button>
+    <button onclick="showBook('1','8','may')" id="btn_may" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_may.png">
+    </button>
+    <button onclick="showBook('1','8','yaq')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_yaq.png">
+    </button>
+    <button onclick="showBook('1','8','nah')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_nah.png">
+    </button>
+</div>
+<br>
+<div id="cuento8" class="book">
+    <div><img src="libros/1_yaq/Cuento1/portada.jpg"></div>
+    <!--<div style="background-image: url('libros/1/Cuento1/P-1.jpg');"></div>
+    <div style="background-image: url('libros/1/Cuento1/P-2.jpg');"></div>-->
+    <div><img src="libros/1_yaq/Cuento8/1.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/2.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/3.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/4.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/5.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/6.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/7.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/8.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/9.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/10.jpg"></div>
+    <div><img src="libros/1_yaq/Cuento8/11.jpg"></div>
+
+
+
+
+</div>
+<!--
+<div class="col-sm-12 descargaAudiolibro">
+    <a href="libros/1_yaq/Cuento2/audio.mp3" download="Audiolibro - El reto: consumir bien">Descargar Audiolibro</a>
+</div>
+-->
+<div id="padre" onload="load()" class="padre">
+    <button onclick="mostrarRompecabezas(1,8)" id="hijo" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/btnarmaelRompecabezas.png">
+    </button>
+</div>
