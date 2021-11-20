@@ -1,4 +1,4 @@
-var host = "/";
+var host = "/namrepository/";
 
 $(document).ready(function() {
 
@@ -8,7 +8,14 @@ $(document).ready(function() {
 
         if(idioma == "may"){
             var url = host + "libros/" + libro + "_may/Cuento" + cuento + "/cuento" + cuento + ".html";
-        }else{
+        }else if(idioma == "yaq"){
+            var url = host + "libros/" + libro + "_yaq/Cuento" + cuento + "/cuento" + cuento + ".html";
+        
+        }else if(idioma == "nah"){
+            var url = host + "libros/" + libro + "_nah/Cuento" + cuento + "/cuento" + cuento + ".html";
+        
+        }else
+        {
             var url = host + "libros/" + libro + "/Cuento" + cuento + "/cuento" + cuento + ".html";
         }
         

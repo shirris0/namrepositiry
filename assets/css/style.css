@@ -2252,7 +2252,7 @@ html {
 }
 
 .btnmostrarRompecabezas {
-    width: 40%;
+    width: 20%;
     border: none;
     background-color: transparent;
 }
@@ -2263,7 +2263,7 @@ html {
 }
 
 .imgarmaRompecabezas {
-    width: 50%;
+    width: 90%;
 }
 
 .btnLenguaje{
