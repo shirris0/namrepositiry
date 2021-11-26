@@ -1,0 +1,51 @@
+<h3 style="color: white;">Texto</h3>
+<div class="row"></div>
+<h3 style="text-align: center;">La alerta</h3>
+<br>
+<div>
+    <audio controls id="audio">
+    <source src="libros/3_yaq/Cuento7/audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+    </audio>
+</div>
+
+<br>
+<div>
+    <button onclick="showBook('3','7')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_es.png">
+    </button>
+    <button onclick="showBook('3','7','may')" id="btn_may" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_may.png">
+    </button>
+    <button onclick="showBook('3','7','yaq')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_yaq.png">
+    </button>
+    <button onclick="showBook('3','7','nah')" id="btn_es" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/boton_nah.png">
+    </button>
+</div>
+<br>
+<div id="cuento7" class="book" data-aos="fade-up">
+    <div><img src="libros/3_yaq/Cuento1/portada.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/1.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/2.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/3.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/4.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/5.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/6.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/7.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/8.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/9.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/10.jpg"></div>
+    <div><img src="libros/3_yaq/Cuento7/11.jpg"></div>
+</div>
+<!--
+<div class="col-sm-12 descargaAudiolibro">
+    <a href="libros/1/Cuento1/audio.mp3" download="Audiolibro - México, un lugar en el Ombligo de la Luna">Descargar Audiolibro</a>
+</div>
+-->
+<div id="padre" onload="load()" class="padre">
+    <button onclick="mostrarRompecabezas(3,7)" id="hijo" class="btnmostrarRompecabezas" href="#padre">
+        <img class="imgarmaRompecabezas" src="assets/img/btnarmaelRompecabezas.png">
+    </button>
+</div>
