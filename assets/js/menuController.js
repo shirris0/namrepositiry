@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     
-    var host = '/';
+    var host = '/namrepository';
 
     $("#main").load(host+"indexContent.html",function(){
         cargarCarousel();
